@@ -26,13 +26,13 @@ several of your personal computers.
   * To generate a new private-public key pair from the bash command prompt:
     ```bash
     ssh-keygen \
-    -t ras \
+    -t rsa \
     -b 4096 \
     -C "put myScreenName at myOrganization here" \
     -N "remember-this-superSecret-passphrase"
 
     # written as a single line command without the backslashes \
-    ssh-keygen -t ras -b 4096 -C "put myScreenName at myOrganization here" -N "remember-this-superSecret-passphrase"
+    ssh-keygen -t rsa -b 4096 -C "put myScreenName at myOrganization here" -N "remember-this-superSecret-passphrase"
 
     ```
 
