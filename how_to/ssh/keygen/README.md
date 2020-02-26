@@ -51,7 +51,7 @@ several of your personal computers.
   * If the comment in the private key needs to be updated:
     ```bash
     ssh-keygen -o -c -C "myScreenName at myOrganization" -f ~/.ssh/id_rsa
-    # Key now has comment '(null)'
+    # Key now has comment '(whateverItWas)'
     # The comment in your key file has been changed.
     ```
   * See the changed comment in the fingerprint
