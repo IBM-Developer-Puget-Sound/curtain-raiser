@@ -54,6 +54,10 @@ several of your personal computers.
     # Key now has comment '(null)'
     # The comment in your key file has been changed.
     ```
+  * See the changed comment in the fingerprint
+    ```bash
+    ssh-keygen -lf ~/.ssh/id_rsa
+    ```
 ----
 
 ### Reference
