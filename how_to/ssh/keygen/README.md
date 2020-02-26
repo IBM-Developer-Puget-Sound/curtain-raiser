@@ -29,10 +29,10 @@ several of your personal computers.
     -t rsa \
     -b 4096 \
     -C "put myScreenName at myOrganization here" \
-    -N "remember-this-superSecret-passphrase"
+    -N "remember-this-super-secret-passphrase"
 
     # written as a single line command without the backslashes \
-    ssh-keygen -t rsa -b 4096 -C "put myScreenName at myOrganization here" -N "remember-this-superSecret-passphrase"
+    ssh-keygen -t rsa -b 4096 -C "put myScreenName at myOrganization here" -N "remember-this-super-secret-passphrase"
 
     ```
 
