@@ -33,7 +33,7 @@ several of your personal computers.
 
     # written as a single line command without the backslashes \
     ssh-keygen -t rsa -b 4096 -C "put myScreenName at myOrganization here" -N "remember-this-super-secret-passphrase"
-
+    
     ```
 
   * The resulting keys will be stored in 
@@ -41,6 +41,12 @@ several of your personal computers.
       `~/.ssh/id_rsa` # private key, not to be shared with anyone.
 
       `~/.ssh/id_rsa.pub` # public key
+
+  * limit permissions of private key
+    ```bash
+    chmod 600 ~/.ssh/id_rsa
+    ```
+
 
   * View the keys
     ```bash
@@ -58,6 +64,12 @@ several of your personal computers.
     ```bash
     ssh-keygen -lf ~/.ssh/id_rsa
     ```
+
+> Note that managing multiple keys is not part of
+> this example.  In cases where there are mulitple
+> private projects it will be desirable to isolate
+> them with separate keys.
+
 ----
 
 ### Reference
