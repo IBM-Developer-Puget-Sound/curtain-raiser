@@ -84,7 +84,7 @@ several of your personal computers.
 
 2. [SSH](https://en.wikipedia.org/wiki/Secure_Shell)
     
-    a. Article: Getting started with SSH security ( developer.ibm [:link](https://developer.ibm.com/articles/au-sshsecurity/) )
+    a. Article: Getting started with SSH security ( developer.ibm [:link:](https://developer.ibm.com/articles/au-sshsecurity/) )
 
     b. man ssh [man7](http://man7.org/linux/man-pages/man1/ssh.1.html)
 
