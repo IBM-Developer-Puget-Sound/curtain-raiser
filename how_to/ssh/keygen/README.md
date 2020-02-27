@@ -26,14 +26,14 @@ several of your personal computers.
   * To generate a new private-public key pair from the bash command prompt:
     ```bash
     ssh-keygen \
-    -t ras \
+    -t rsa \
     -b 4096 \
     -C "put myScreenName at myOrganization here" \
-    -N "remember-this-superSecret-passphrase"
+    -N "remember-this-super-secret-passphrase"
 
     # written as a single line command without the backslashes \
-    ssh-keygen -t ras -b 4096 -C "put myScreenName at myOrganization here" -N "remember-this-superSecret-passphrase"
-
+    ssh-keygen -t rsa -b 4096 -C "put myScreenName at myOrganization here" -N "remember-this-super-secret-passphrase"
+    
     ```
 
   * The resulting keys will be stored in 
@@ -41,6 +41,12 @@ several of your personal computers.
       `~/.ssh/id_rsa` # private key, not to be shared with anyone.
 
       `~/.ssh/id_rsa.pub` # public key
+
+  * limit permissions of private key
+    ```bash
+    chmod 600 ~/.ssh/id_rsa
+    ```
+
 
   * View the keys
     ```bash
@@ -51,9 +57,19 @@ several of your personal computers.
   * If the comment in the private key needs to be updated:
     ```bash
     ssh-keygen -o -c -C "myScreenName at myOrganization" -f ~/.ssh/id_rsa
-    # Key now has comment '(null)'
+    # Key now has comment '(whateverItWas)'
     # The comment in your key file has been changed.
     ```
+  * See the changed comment in the fingerprint
+    ```bash
+    ssh-keygen -lf ~/.ssh/id_rsa
+    ```
+
+> Note that managing multiple keys is not part of
+> this example.  In cases where there are mulitple
+> private projects it will be desirable to isolate
+> them with separate keys.
+
 ----
 
 ### Reference
@@ -68,7 +84,7 @@ several of your personal computers.
 
 2. [SSH](https://en.wikipedia.org/wiki/Secure_Shell)
     
-    a. Article: Getting started with SSH security ( developer.ibm [:link](https://developer.ibm.com/articles/au-sshsecurity/) )
+    a. Article: Getting started with SSH security ( developer.ibm [:link:](https://developer.ibm.com/articles/au-sshsecurity/) )
 
     b. man ssh [man7](http://man7.org/linux/man-pages/man1/ssh.1.html)
 
@@ -82,3 +98,7 @@ several of your personal computers.
     d. Ubuntu docs [openssh](https://help.ubuntu.com/lts/serverguide/openssh-server.html)
 
     e. Fedora docs f31 [openssh](https://docs.fedoraproject.org/en-US/fedora/f31/system-administrators-guide/infrastructure-services/OpenSSH/)
+
+4. Youtube
+
+   a. IBM Developer Puget Sound [playlist](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
