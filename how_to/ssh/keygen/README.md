@@ -98,3 +98,7 @@ several of your personal computers.
     d. Ubuntu docs [openssh](https://help.ubuntu.com/lts/serverguide/openssh-server.html)
 
     e. Fedora docs f31 [openssh](https://docs.fedoraproject.org/en-US/fedora/f31/system-administrators-guide/infrastructure-services/OpenSSH/)
+
+4. Youtube
+
+   a. IBM Developer Puget Sound [playlist](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
