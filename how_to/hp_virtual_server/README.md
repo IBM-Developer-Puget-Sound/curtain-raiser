@@ -9,9 +9,9 @@
 
 2. Click on hamburger menu in the upper left corner.
 
-3. Click on dropdown item `Classic Infrastructure`
+3. Click on dropdown item `Classic Infrastructure` .
 
-4. Click on the button `Order Devices +` on right hand side
+4. Click on the button `Order Devices +` on right hand side.
 
 5. Click on the Services `Compute` category on the left to
    filter the choices.
@@ -29,14 +29,14 @@
 
 9. Scroll down the page to enter your `SSH public key`.
    * To allow access the virtual server later.
-   * This is the key you found or generated in a previous step on your pc at `~/.ssh/id_rsa.pub`
+   * This is the key you found or generated in a previous step on your pc at `~/.ssh/id_rsa.pub` .
 
 10. Click on the `Create` button, on the bottom right of the screen.
 
 11. Expect to wait a while for the service to be generated.
     * The screen will be redirected to your `Resource List`
     * Scroll down to and click on the  `Services` heading to see the Hyper Protect service-name that you just created.
-    * Refresh your screen until is shows Status `Active`
+    * Refresh your screen until is shows Status `Active` .
 
 ----
 
@@ -48,14 +48,14 @@
 14.  See something like:
      * `ssh root@nnn.nn.nn.nn`
 
-15.  Copy and paste the command from the how to connect modal into your command line
+15.  Copy and paste the command from the how to connect modal into your command line.
      > note: the IBM screen provides your correct IP numbers, (not the nnn placeholders above)
 
      * you might need that top secret passphrase here!
 
 ### Troubleshooting
 
-* error message: `sign_and_send_pubkey: signing failed: agent refused operation`
+* error message: `sign_and_send_pubkey: signing failed: agent refused operation` .
 
   * did the private key permissions get correct modification?
     * `chmod 600 ~/.ssh/id_rsa`
@@ -70,12 +70,12 @@
     ```bash
     ssh-keygen -lf ~/.ssh/id_rsa.pub
     ```
-    * see the submitted fingerprint in the management screeen
+    * see the submitted fingerprint in the management screeen.
 
 ----
 
 Reference: 
-* cloud . IBM . com docs Hyper Protect virtual server
+* cloud . IBM . com docs Hyper Protect virtual server.
   * getting started [:link:](https://cloud.ibm.com/docs/services/hp-virtual-servers?topic=hp-virtual-servers-getting-started)
 
 * Youtube
