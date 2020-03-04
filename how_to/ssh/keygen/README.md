@@ -101,4 +101,6 @@ several of your personal computers.
 
 4. Youtube
 
-   a. IBM Developer Puget Sound [playlist](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
+   * IBM Developer Puget Sound 
+     * tutorial [:link:](https://youtu.be/uIWlhGeg7Ik)
+     * playlist [:link:](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
