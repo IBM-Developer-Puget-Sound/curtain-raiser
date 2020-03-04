@@ -1,7 +1,7 @@
 # Provision a Hyper Protect Virtual Server
 
 ### Prerequisite
-* Register for an account at: myibm.ibm.com
+* Register for an account at: myibm.ibm.com [:link:](https:myibm.ibm.com)
 * Generate or find your SSH public/private RSA key [:link:](https://github.com/IBM-Developer-Puget-Sound/curtain-raiser/blob/master/how_to/ssh/keygen/README.md)
 ----
 
