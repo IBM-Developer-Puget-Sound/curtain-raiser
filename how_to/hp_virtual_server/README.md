@@ -79,5 +79,5 @@ Reference:
   * getting started [:link:](https://cloud.ibm.com/docs/services/hp-virtual-servers?topic=hp-virtual-servers-getting-started)
 
 * Youtube
-  * IBM developer Puget Sound [:link:]()
+  * IBM developer Puget Sound [:link:](https://youtu.be/2CcAw58FDEI)
   * DTE how to [:link:](https://youtu.be/GlP-w-vsPmc)
