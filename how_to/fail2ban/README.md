@@ -15,7 +15,7 @@ sudo apt-get install -y python3
 ## Install
 ```bash
 sudo apt install -y fail2ban
-``
+```
 
 ## Configure
 ```bash
@@ -47,6 +47,7 @@ sudo fail2ban-client status sshd # for example
 * Tecmint article [:link:](https://www.tecmint.com/use-fail2ban-to-secure-linux-server/)
 
 * Youtube
-  - IBM Developer Puget Sound [:link:]()
-  - IBM Developer Puget Sound channel [:link:]()
+  - IBM Developer Puget Sound 
+    * tutorial [:link:]()
+    * playlist [:link:](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
   - Eric lewis [:link](https://youtu.be/Sm5XlFxWqdo)
