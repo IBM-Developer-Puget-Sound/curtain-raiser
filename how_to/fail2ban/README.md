@@ -50,4 +50,4 @@ sudo fail2ban-client status sshd # for example
   - IBM Developer Puget Sound 
     * tutorial [:link:]()
     * playlist [:link:](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
-  - Eric lewis [:link](https://youtu.be/Sm5XlFxWqdo)
+  - Eric lewis [:link:](https://youtu.be/Sm5XlFxWqdo)
