@@ -8,8 +8,9 @@
 ## Prerequisite
 ```bash
 uname -or
-sudo apt-get update && apt-get upgrade -y
-sudo apt-get install -y python3
+sudo apt update && apt upgrade -y
+python3 --version
+sudo apt install -y python3 # if not alread installed
 ```
 
 ## Install
@@ -51,3 +52,7 @@ sudo fail2ban-client status sshd # for example
     * tutorial [:link:]()
     * playlist [:link:](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
   - Eric lewis [:link:](https://youtu.be/Sm5XlFxWqdo)
+
+* Documentation
+  - Ubuntu `apt` [:link:](https://help.ubuntu.com/lts/serverguide/apt.html)
+  - Debian `apt` [:link:](https://www.debian.org/doc/manuals/debian-handbook/sect.apt-get.en.html)
