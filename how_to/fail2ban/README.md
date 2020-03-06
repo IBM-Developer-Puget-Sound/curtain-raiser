@@ -16,7 +16,7 @@ uname -i # hardware-platform
 
 sudo apt update && apt upgrade -y
 python3 --version
-# if python3 not already installed
+# if python3 not already installed, then
 sudo apt install -y python3
 ```
 
@@ -42,8 +42,8 @@ vim /etc/fail2ban/jail.local
 * vim help [:link:](https://vimhelp.org/)
   * `i` insert mode
   * `esc` exit insert mode
-  * `:` `w` write to file
-  * `:` `q` quit editing
+  * `:` `w` `enter` write to file
+  * `:` `q` `enter` quit editing
 
 In file `jail.local` Confirm/edit the following:
 
