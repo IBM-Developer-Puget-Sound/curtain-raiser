@@ -27,6 +27,7 @@ sudo apt install -y fail2ban
 
 ## Configure
 ```bash
+# copy
 sudo cp /etc/fail2ban/fail2ban.conf /etc/fail2ban/fail2ban.local
 # just to see the file is there
 sudo cat /etc/fail2ban/fail2ban.local | more
@@ -34,14 +35,15 @@ sudo cat /etc/fail2ban/fail2ban.local | more
 
 ## Configure jail.local
 ```bash
+# copy
 sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 vim /etc/fail2ban/jail.local
 ```
 * vim help [:link:](https://vimhelp.org/)
   * `i` insert mode
   * `esc` exit insert mode
-  * `:``w` write to file
-  * `:``q` quit editing
+  * `:` `w` write to file
+  * `:` `q` quit editing
 
 In file `jail.local` Confirm/edit the following:
 
