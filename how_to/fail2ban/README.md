@@ -97,15 +97,17 @@ __OR__
 sudo cat /var/log/fail2ban.log | more
 ```
 
-## Stopping
-```bash
-# stops all jails and terminate server
-sudo fail2ban-client stop
-```
 ## Additional help
 ```bash
 sudo fail2ban-client --help
 ```
+
+## Stopping
+```bash
+# stop all jails and terminate server
+sudo fail2ban-client stop
+```
+
 ## Reference
 
 * Fail2ban main-page [:link:](https://www.fail2ban.org/wiki/index.php/Main_Page)
@@ -117,7 +119,6 @@ sudo fail2ban-client --help
   - IBM Developer Puget Sound 
     * tutorial [:link:]()
     * playlist [:link:](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
-  - Eric lewis [:link:](https://youtu.be/Sm5XlFxWqdo)
 
 * Documentation
   - Ubuntu `apt` [:link:](https://help.ubuntu.com/lts/serverguide/apt.html)
