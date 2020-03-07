@@ -117,7 +117,7 @@ sudo fail2ban-client stop
 
 * Youtube
   - IBM Developer Puget Sound 
-    * tutorial [:link:]()
+    * tutorial [:link:](https://youtu.be/Wh5kpnsZg84)
     * playlist [:link:](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
 
 * Documentation
