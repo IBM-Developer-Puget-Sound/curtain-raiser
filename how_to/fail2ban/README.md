@@ -5,6 +5,19 @@
 > from around the world. Ban attempted logins
 > from the hackers IP address for some time.
 
+```bash
+# which can be inspected with
+cat /var/log/auth.log | more
+
+# OR with specific error messages like
+grep "Connection closed by" /var/log/auth.log | more
+
+grep "Disconnected from invalid user" /var/log/auth.log | more
+
+grep "Received disconnect from" /var/log/auth.log | more
+# etc
+```
+
 ## Prerequisite
 ```bash
 uname -o # operating-system
@@ -18,11 +31,19 @@ sudo apt update && apt upgrade -y
 python3 --version
 # if python3 not already installed, then
 sudo apt install -y python3
+
+# know your ssh port
+sudo grep Port /etc/ssh/sshd_config
 ```
 
 ## Install ( on Ubuntu )
 ```bash
 sudo apt install -y fail2ban
+sudo fail2ban-client --version
+# Fail2Ban v0.10.2
+
+# check status
+systemctl status fail2ban
 ```
 
 ## Configure
@@ -69,10 +90,12 @@ maxretry = 3
 enabled = true # add this line
 ```
 
-## Start and Enable
+## Start, enable and check status
 ```bash
 sudo systemctl start fail2ban
 sudo systemctl enable fail2ban
+# check status
+sudo systemctl status fail2ban
 ```
 
 ## View the jailed IP addresses
