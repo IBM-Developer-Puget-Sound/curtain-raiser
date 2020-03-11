@@ -7,6 +7,7 @@
 
 ```bash
 # which can be inspected with
+tail /var/log/auth.log # OR
 cat /var/log/auth.log | more
 
 # OR with specific error messages like
@@ -40,7 +41,8 @@ sudo grep Port /etc/ssh/sshd_config
 ```bash
 sudo apt install -y fail2ban
 sudo fail2ban-client --version
-# Fail2Ban v0.10.2
+# Fail2Ban v0.10.2-2
+# Compare to latast version on github
 
 # check status
 systemctl status fail2ban
