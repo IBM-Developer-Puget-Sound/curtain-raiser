@@ -20,6 +20,8 @@ grep "Received disconnect from" /var/log/auth.log | more
 ```
 
 ## Prerequisite
+
+These instructions apply to the following:
 ```bash
 uname -o # operating-system
 # GNU/Linux
