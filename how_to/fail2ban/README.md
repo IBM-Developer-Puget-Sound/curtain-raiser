@@ -40,6 +40,9 @@ sudo grep Port /etc/ssh/sshd_config
 ```
 
 ## Install ( on Ubuntu )
+
+The instructions suggest
+
 ```bash
 sudo apt install -y fail2ban
 sudo fail2ban-client --version
@@ -48,6 +51,18 @@ sudo fail2ban-client --version
 
 # check status
 systemctl status fail2ban
+```
+however, if the OS packaged version is not
+the latest desired then try uninstalling
+the older version and cloning the latest
+version from github.
+
+```bash
+sudo apt uninstall fail2ban
+git clone https://github.com/fail2ban/fail2ban.git
+cd fail2ban
+sudo python setup.py install
+sudo fail2ban-client --version
 ```
 
 ## Configure
@@ -70,7 +85,7 @@ vim /etc/fail2ban/jail.local
   * `:` `w` `enter` write to file
   * `:` `q` `enter` quit editing
 
-In file `jail.local` Confirm/edit the following:
+In file `jail.local` confirm/edit the following:
 
 ```bash
 # Whitelist your IP for example
@@ -101,6 +116,23 @@ sudo systemctl enable fail2ban
 # check status
 sudo systemctl status fail2ban
 ```
+
+## Attempt a hack on server under test
+
+* With an IP address different from your local IP 
+
+  a. log into a remote server
+  b. from the remote server
+     * with a fake user name attempt to ssh
+       into the server under test
+
+```bash
+ssh goodusername@remote.server.ip
+# from within that server
+ssh whitehat@server.under.test
+# view the jailed IP addresses
+```
+
 
 ## View the jailed IP addresses
 After attackers have made their attempted login
