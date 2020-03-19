@@ -58,6 +58,7 @@ the older version and cloning the latest
 version from github.
 
 ```bash
+sudo fail2ban-client stop
 sudo apt uninstall fail2ban
 git clone https://github.com/fail2ban/fail2ban.git
 cd fail2ban
