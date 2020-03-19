@@ -122,7 +122,9 @@ sudo systemctl status fail2ban
 * With an IP address different from your local IP 
 
   a. log into a remote server
+
   b. from the remote server
+
      * with a fake user name attempt to ssh
        into the server under test
 
