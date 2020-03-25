@@ -8,7 +8,7 @@
 * IBM Cloud CLI [:link:](https://github.com/IBM-Cloud/ibm-cloud-cli-release) __s390x NOT SUPPORTED__ ( cannot consider s390x as a an enviroment that can be used to access other parts of the IBM Cloud )
 
 ## Prerequisites
-* Check Ubuntu version, then compare to Docker requirements
+* Check Ubuntu version, then compare to Docker [requirements](https://docs.docker.com/install/linux/docker-ce/ubuntu/#os-requirements)
 ```bash
 lsb_release -a
 # one possible result
@@ -17,4 +17,15 @@ Distributor ID:	Ubuntu
 Description:	Ubuntu 18.04.4 LTS
 Release:	18.04
 Codename:	bionic
+```
+
+## Install the packages
+
+```bash
+sudo apt install -y git tmux curl less
+```
+## Install Docker
+1. Uninstall old versions [:link:](https://docs.docker.com/install/linux/docker-ce/ubuntu/#uninstall-old-versions)
+2. Install Docker Engine - Community [:link:](https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-engine---community)
+```bash
 ```
