@@ -4,7 +4,7 @@
 * __Tmux__ - terminal multiplexing [:link:](https://github.com/tmux/tmux)
 * __Curl__ - transfer data to or from server [:link:](http://manpages.ubuntu.com/manpages/bionic/man1/curl.1.html)
 * __Less__ - view file pager [:link:](https://manpages.ubuntu.com/manpages/bionic/en/man1/less.1.html)
-* __Docker Engine CE__ -  container daemon [:link](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+* __Docker Engine CE__ -  container daemon [:link:](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 * IBM Cloud CLI [:link:](https://github.com/IBM-Cloud/ibm-cloud-cli-release) __s390x NOT SUPPORTED__ ( cannot consider s390x as a an enviroment that can be used to access other parts of the IBM Cloud )
 
 ## Prerequisites
