@@ -23,9 +23,11 @@ Codename:	bionic
 ## Install the packages
 
 ```bash
-sudo apt install -y git tmux curl less
+sudo apt --yes --force-yes install git tmux curl less
 ```
+
 ## Install Docker
+
 1. Uninstall old versions [:link:](https://docs.docker.com/install/linux/docker-ce/ubuntu/#uninstall-old-versions)
 2. Install Docker Engine - Community [:link:](https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-engine---community)
 ```bash
