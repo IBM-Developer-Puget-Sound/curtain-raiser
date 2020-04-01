@@ -56,6 +56,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=s390x] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
 sudo apt update
+sudo apt upgrade -y
 ```
 
 * check the repository for available docker packages, excluding golang
@@ -72,6 +73,8 @@ apt install docker-ce docker-containerd docker-compose
 
 * test
 ```bash
+sudo docker -v
+sudo docker info
 sudo docker run hello-world
 ```
 
