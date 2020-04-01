@@ -52,7 +52,7 @@ sudo apt install apt-transport-https \
                  gnupg-agent \
                  software-properties-common
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=s390x] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
 sudo apt update
@@ -75,6 +75,7 @@ sudo apt install docker-ce docker-compose
 ```bash
 sudo docker -v
 sudo docker info
+sudo docker help
 sudo docker run hello-world
 ```
 
