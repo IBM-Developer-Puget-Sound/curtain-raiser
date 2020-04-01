@@ -74,8 +74,8 @@ sudo apt install docker-ce docker-compose
 * test
 ```bash
 sudo docker -v
+sudo docker --help
 sudo docker info
-sudo docker help
 sudo docker run hello-world
 ```
 
