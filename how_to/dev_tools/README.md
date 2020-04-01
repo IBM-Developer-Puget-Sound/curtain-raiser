@@ -68,7 +68,7 @@ apt-cache search docker | grep -E "docker-ce*" | grep -Ev "golang*" | less
 
 * install
 ```bash
-apt install docker-ce docker-containerd docker-compose
+apt install docker-ce docker-compose
 ```
 
 * test
