@@ -30,11 +30,54 @@ Codename:       bionic
 ```
 
 2. Uninstall old versions [:link:](https://docs.docker.com/install/linux/docker-ce/ubuntu/#uninstall-old-versions)
-3. Install Docker Engine - Community [:link:](https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-engine---community)
+
+```bash
+sudo apt remove docker-ce docker-compose containerd
+```
+
+3. Install Docker Engine - Community [:link:](https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-engine---community-1)
+
+* package updates
+```bash
+sudo apt update
+sudo apt upgrade -y
+sudo apt clean
+sudo apt autoremove
+```
+
+```bash
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+```
+
+* check the repository for available docker packages, excluding golang
+  unless you want that.
+
+```bash
+apt-cache search docker | grep -E "docker-ce*" | grep -Ev "golang*" | less
+```
+
+```bash
+apt install docker-ce docker-containerd docker-compose
+```
 
 ## Reference
-1. Youtube
+
+* apt-cache [:link:](http://manpages.ubuntu.com/manpages/bionic/man8/apt-cache.8.html)
+
+* apt [:link:](https://www.debian.org/doc/manuals/debian-handbook/sect.apt-get.en.html)
+
+* help ubuntu repositories command line [:link:](https://help.ubuntu.com/community/Repositories/CommandLine)
+
+* Unix Stack Exchange issue 363048 [:link:](https://unix.stackexchange.com/questions/363048/unable-to-locate-package-docker-ce-on-a-64bit-ubuntu) 
+
+* Youtube
 
    * IBM Developer Puget Sound 
      * tutorial [:link:](https://youtu.be/hcbuZ234SOg)
      * playlist [:link:](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
+
+* Documentation
+  - Ubuntu `apt` [:link:](https://help.ubuntu.com/lts/serverguide/apt.html)
+  - Debian `apt` [:link:](https://www.debian.org/doc/manuals/debian-handbook/sect.apt-get.en.html)
