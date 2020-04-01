@@ -63,12 +63,12 @@ sudo apt upgrade -y
   unless you want that.
 
 ```bash
-apt-cache search docker | grep -E "docker-ce*" | grep -Ev "golang*" | less
+sudo apt-cache search docker | grep -E "docker-ce*" | grep -Ev "golang*" | less
 ```
 
 * install
 ```bash
-apt install docker-ce docker-compose
+sudo apt install docker-ce docker-compose
 ```
 
 * test
