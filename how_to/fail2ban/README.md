@@ -5,20 +5,6 @@
 > from around the world. Ban attempted logins
 > from the hackers IP address for some time.
 
-```bash
-# which can be inspected with
-tail /var/log/auth.log # OR
-cat /var/log/auth.log | more
-
-# OR with specific error messages like
-grep "Connection closed by" /var/log/auth.log | more
-
-grep "Disconnected from invalid user" /var/log/auth.log | more
-
-grep "Received disconnect from" /var/log/auth.log | more
-# etc
-```
-
 ## Prerequisite
 
 These instructions apply to the following:
@@ -38,6 +24,25 @@ sudo apt install -y python3
 # know your ssh port
 sudo grep Port /etc/ssh/sshd_config
 ```
+
+
+## Inspect failed attempts 
+
+* in the authentication log with:
+
+```bash
+tail /var/log/auth.log # OR
+cat /var/log/auth.log | more
+
+# OR with specific error messages like
+grep "Connection closed by" /var/log/auth.log | more
+
+grep "Disconnected from invalid user" /var/log/auth.log | more
+
+grep "Received disconnect from" /var/log/auth.log | more
+# etc
+```
+
 
 ## Install ( on Ubuntu )
 
