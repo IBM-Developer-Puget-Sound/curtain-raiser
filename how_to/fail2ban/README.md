@@ -115,7 +115,13 @@ maxretry = 3
 enabled = true # add this line
 ```
 
-## Start, enable and check status
+## Start, check status (prefered)
+```bash
+sudo fail2ban-client start
+sudo fail2ban-client status
+```
+
+## Start, enable and check status (alternative)
 ```bash
 sudo systemctl start fail2ban
 sudo systemctl enable fail2ban
