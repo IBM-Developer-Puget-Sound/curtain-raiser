@@ -64,7 +64,7 @@ version from github.
 
 ```bash
 sudo fail2ban-client stop
-sudo apt uninstall fail2ban
+sudo apt remove --purge fail2ban
 git clone https://github.com/fail2ban/fail2ban.git
 cd fail2ban
 sudo python setup.py install
@@ -184,7 +184,7 @@ sudo fail2ban-client stop
 
 * Youtube
   - IBM Developer Puget Sound 
-    * tutorial [:link:](https://youtu.be/Wh5kpnsZg84)
+    * this tutorial [:link:](https://youtu.be/khjOIlaKrUM)
     * playlist [:link:](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
 
 * Documentation
