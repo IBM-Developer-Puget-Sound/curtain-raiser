@@ -1,6 +1,15 @@
 # Installing Jitsi Meet with Docker [:link:](https://github.com/jitsi/docker-jitsi-meet/blob/master/README.md#jitsi-meet-on-docker)
 > on IBM s390x
 
+## Prerequisites
+* Have installed
+  * docker-ce
+  * docker-compose
+
+## Docker housekeeping
+```bash
+docker --help | less
+```
 * look to see what containers are available
   *  should be no containers for a fresh start
 ```bash
