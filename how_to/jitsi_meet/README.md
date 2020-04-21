@@ -9,6 +9,7 @@
 ## Docker housekeeping
 ```bash
 docker --help | less
+docker container --help | less #and etc
 ```
 * look to see what containers are available
   *  should be no containers for a fresh start
