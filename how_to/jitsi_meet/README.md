@@ -29,7 +29,7 @@ docker-compose down
 * remove the "old" containers
   * something like
 ```bash
-docker container rm hello-world \
+docker container rm hello-world(NAMES) \
                     other-container-name-here
 ```
 
@@ -43,19 +43,31 @@ docker rmi IMAGE-ID-HERE
   *  by completely removing the the last revision
      * __THIS WILL DELETE EVERYTHING!__
 ```bash
+mkdir ~/workspace
 cd ~/workspace
-sudo rm -rf docker-jitsi-meeti
+sudo rm -rf docker-jitsi-meet
 ```
 
 ## Quick start [:link:](https://github.com/jitsi/docker-jitsi-meet/blob/master/README.md#quick-start)
+
+> will this docker image  work on architecture s390x ?
 
 ```bash
 cd ~/workspace
 
 git clone https://github.com/jitsi/docker-jitsi-meet && cd docker-jitsi-meet
+
 cp env.example .env
+
+./gen-passwords.sh
+
 mkdir -p ~/.jitsi-meet-cfg/{web/letsencrypt,transcripts,prosody,jicofo,jvb,jigasi,jibri}
-docker-compose up -d.
+
+docker-compose up -d
 
 ```
+
+## Visit your newly installed and running jitsi-meet server
+
+`https://ip.adddress.here:8443`
 
