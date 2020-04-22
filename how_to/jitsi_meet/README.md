@@ -48,9 +48,12 @@ cd ~/workspace
 sudo rm -rf docker-jitsi-meet
 ```
 
-## Quick start [:link:](https://github.com/jitsi/docker-jitsi-meet/blob/master/README.md#quick-start)
+## Quick start docker-jitsi-meet [:link:](https://github.com/jitsi/docker-jitsi-meet/blob/master/README.md#quick-start)
 
 > will this docker image  work on architecture s390x ?
+> [no](https://forums.docker.com/t/standard-init-linux-go-190-exec-user-process-caused-exec-format-error/49368/5) because "You have to run the docker image
+> that was built for a particular Architecture on a
+> docker node that is running that same Architecture."
 
 ```bash
 cd ~/workspace
