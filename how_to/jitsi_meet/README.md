@@ -1,5 +1,16 @@
-# Jitsi Meet quick install [:link:](https://github.com/jitsi/jitsi-meet/blob/master/doc/quick-install.md#jitsi-meet-quick-install)
+# Jitsi Meet
 > on IBM s390x
+
+## Prerequisites
+Make sure you already have an [ssh-key](https://github.com/IBM-Developer-Puget-Sound/curtain-raiser/blob/master/how_to/ssh/keygen/README.md),
+
+ HPV [server](https://github.com/IBM-Developer-Puget-Sound/curtain-raiser/blob/master/how_to/hp_virtual_server/README.md),
+
+ essential devops [packages](https://github.com/IBM-Developer-Puget-Sound/curtain-raiser/blob/master/how_to/dev_tools/README.md),
+
+ and limited [access](https://github.com/IBM-Developer-Puget-Sound/curtain-raiser/blob/master/how_to/fail2ban/README.md),
+
+## quick install [:link:](https://github.com/jitsi/jitsi-meet/blob/master/doc/quick-install.md#jitsi-meet-quick-install)
 
 ```bash
 sudo echo 'deb https://download.jitsi.org stable/' >> /etc/apt/sources.list.d/jitsi-stable.list
