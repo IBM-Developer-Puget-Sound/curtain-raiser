@@ -46,7 +46,7 @@ https://rtc-meet.mywebsite.com
 ```
 
 ## Remove [:link:](https://github.com/jitsi/jitsi-meet/blob/master/doc/quick-install.md#uninstall)
-* permanently remove the jitsi packages.  Current users will be unceremoniously dropped.
+* permanently remove the jitsi packages. :warning: Current users will be unceremoniously dropped.
 
 ```bash
 sudo apt-get purge jigasi jitsi-meet jitsi-meet-web-config \
