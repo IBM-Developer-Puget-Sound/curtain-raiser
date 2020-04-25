@@ -37,7 +37,7 @@ sudo apt-get -y install jitsi-meet
 ```
 https://my.ip.address
 # OR
-https://mywebsite.com
+https://rtc-meet.mywebsite.com
 ```
 
 ## Remove [:link:](https://github.com/jitsi/jitsi-meet/blob/master/doc/quick-install.md#uninstall)
