@@ -26,9 +26,9 @@ sudo iptables -A INPUT -p udp --dport 10000 -j ACCEPT
 ## Install jitsi meet [:link:](https://github.com/jitsi/jitsi-meet/blob/master/doc/quick-install.md#install-jitsi-meet)
 
 ```bash
-sudo apt-get install apt-transport-https
-sudo apt-get update
-sudo apt-get -y install jitsi-meet
+sudo apt install apt-transport-https
+sudo apt update
+sudo apt -y install jitsi-meet
 ```
 
 ## Generate a Let's Encrypt certificate [:link:](https://github.com/jitsi/jitsi-meet/blob/master/doc/quick-install.md#generate-a-lets-encrypt-certificate-optional-recommended)
@@ -49,7 +49,7 @@ https://rtc-meet.mywebsite.com
 * permanently remove the jitsi packages. :warning: Current users will be unceremoniously dropped.
 
 ```bash
-sudo apt-get purge jigasi jitsi-meet jitsi-meet-web-config \
+sudo apt purge jigasi jitsi-meet jitsi-meet-web-config \
               jitsi-meet-prosody jitsi-meet-turnserver \
               jitsi-meet-web jicofo jitsi-videobridge2
 ```
