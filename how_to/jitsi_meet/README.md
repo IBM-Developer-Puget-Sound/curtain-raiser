@@ -46,12 +46,15 @@ https://rtc-meet.mywebsite.com
 ```
 
 ## Remove [:link:](https://github.com/jitsi/jitsi-meet/blob/master/doc/quick-install.md#uninstall)
+> In case jitsi-meet is no longer needed
+
 * permanently remove the jitsi packages. :warning: Current users will be unceremoniously dropped.
 
 ```bash
-sudo apt purge jigasi jitsi-meet jitsi-meet-web-config \
-              jitsi-meet-prosody jitsi-meet-turnserver \
-              jitsi-meet-web jicofo jitsi-videobridge2
+sudo apt remove --purge \
+     jigasi jitsi-meet jitsi-meet-web-config \
+     jitsi-meet-prosody jitsi-meet-turnserver \
+     jitsi-meet-web jicofo jitsi-videobridge2
 ```
 
 * close the previously opened ports
@@ -59,8 +62,24 @@ sudo apt purge jigasi jitsi-meet jitsi-meet-web-config \
 
 ```
 
+* remove hidden configuration files
+```bash
+sudo rm -rf ~/.jitsi-meet-cfg/
+```
+
+* remove the jitsi gpg key
+```bash
+sudo apt-key list | less
+# choose the Jitsi hash last eight characters
+sudo apt-key remove NNNNnnnn
+```
+* remove the source list
+```bash
+rm /etc/apt/sources.list.d/jitsi-stable.list
+```
 
 ## Reference
 
 * ubuntu iptables manpage [:link:](http://manpages.ubuntu.com/manpages/bionic/en/man8/iptables.8.html)
 
+* ubuntu apt-key manpage [:link:](http://manpages.ubuntu.com/manpages/bionic/en/man8/apt-key.8.html)
