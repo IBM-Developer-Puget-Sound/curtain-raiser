@@ -59,7 +59,18 @@ sudo apt remove --purge \
 
 * close the previously opened ports
 ```bash
+# delete accept
+sudo iptables -D INPUT -p tcp -m tcp --dport 80 -j ACCEPT
+sudo iptables -D INPUT -p tcp -m tcp --dport 443 -j ACCEPT
+sudo iptables -D INPUT -p udp -m udp --dport 10000 -j ACCEPT
 
+# add reject
+iptables -A INPUT -p tcp --dport 80 -j REJECT
+iptables -A INPUT -p tcp --dport 443 -j REJECT
+iptables -A INPUT -p udp --dport 10000 -j REJECT
+
+iptables -S   # list rules in chain
+iptables -nvL # list all the rules
 ```
 
 * remove hidden configuration files
