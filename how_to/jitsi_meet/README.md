@@ -26,8 +26,9 @@ sudo iptables -A INPUT -p udp --dport 10000 -j ACCEPT
 ## Install jitsi meet [:link:](https://github.com/jitsi/jitsi-meet/blob/master/doc/quick-install.md#install-jitsi-meet)
 
 ```bash
-sudo apt install apt-transport-https
+sudo apt -y install apt-transport-https
 sudo apt update
+sudo apt upgrade
 sudo apt -y install jitsi-meet
 ```
 
@@ -54,7 +55,8 @@ https://rtc-meet.mywebsite.com
 sudo apt remove --purge \
      jigasi jitsi-meet jitsi-meet-web-config \
      jitsi-meet-prosody jitsi-meet-turnserver \
-     jitsi-meet-web jicofo jitsi-videobridge2
+     jitsi-meet-web jicofo jitsi-videobridge2 \
+     apt-transport-https
 ```
 
 * close the previously opened ports
@@ -94,3 +96,9 @@ rm /etc/apt/sources.list.d/jitsi-stable.list
 * ubuntu iptables manpage [:link:](http://manpages.ubuntu.com/manpages/bionic/en/man8/iptables.8.html)
 
 * ubuntu apt-key manpage [:link:](http://manpages.ubuntu.com/manpages/bionic/en/man8/apt-key.8.html)
+
+* Youtube
+  * IBM Developer Puget Sound
+    * this tutorial [:link:](https://youtu.be/7llu_JX0dNA)
+    * playlist [:link:](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
+
