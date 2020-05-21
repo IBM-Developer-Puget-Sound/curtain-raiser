@@ -1,51 +1,104 @@
-# Installing Jitsi Meet with Docker [:link:](https://github.com/jitsi/docker-jitsi-meet/blob/master/README.md#jitsi-meet-on-docker)
+# Jitsi Meet [:link:](https://jitsi.org/jitsi-meet/)
 > on IBM s390x
 
-* look to see what containers are available
-  *  should be no containers for a fresh start
-```bash
-docker container ls --all # look to see if empty
-```
+## Prerequisites
+Make sure you already have an [ssh-key](https://github.com/IBM-Developer-Puget-Sound/curtain-raiser/blob/master/how_to/ssh/keygen/README.md), HPV [server](https://github.com/IBM-Developer-Puget-Sound/curtain-raiser/blob/master/how_to/hp_virtual_server/README.md), essential devops [packages](https://github.com/IBM-Developer-Puget-Sound/curtain-raiser/blob/master/how_to/dev_tools/README.md), and limited [access](https://github.com/IBM-Developer-Puget-Sound/curtain-raiser/blob/master/how_to/fail2ban/README.md).
 
-* check to see if any running containers
-```bash
-docker-compose ps
-```
-* shutdown all currently running containers
-```bash
-docker-compose down
-```
-
-* remove the "old" containers
-  * something like
-```bash
-docker container rm hello-world \
-                    other-container-name-here
-```
-
-* remove unneeded images
-```bash
-docker images -a # list all the images
-docker rmi IMAGE-ID-HERE
-```
-
-* start with an empty workspace
-  *  by completely removing the the last revision
-     * __THIS WILL DELETE EVERYTHING!__
-```bash
-cd ~/workspace
-sudo rm -rf docker-jitsi-meeti
-```
-
-## Quick start [:link:](https://github.com/jitsi/docker-jitsi-meet/blob/master/README.md#quick-start)
+## Quick install [:link:](https://github.com/jitsi/jitsi-meet/blob/master/doc/quick-install.md#jitsi-meet-quick-install)
 
 ```bash
-cd ~/workspace
+sudo echo 'deb https://download.jitsi.org stable/' >> /etc/apt/sources.list.d/jitsi-stable.list
 
-git clone https://github.com/jitsi/docker-jitsi-meet && cd docker-jitsi-meet
-cp env.example .env
-mkdir -p ~/.jitsi-meet-cfg/{web/letsencrypt,transcripts,prosody,jicofo,jvb,jigasi,jibri}
-docker-compose up -d.
+sudo curl -so -  https://download.jitsi.org/jitsi-key.gpg.key | sudo apt-key add -
 
+# OR
+#sudo wget -qO -  https://download.jitsi.org/jitsi-key.gpg.key | sudo apt-key add -
 ```
+
+## Open ports in your firewall
+```bash
+sudo iptables -nvL # list open ports
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
+sudo iptables -A INPUT -p udp --dport 10000 -j ACCEPT
+```
+
+## Install jitsi meet [:link:](https://github.com/jitsi/jitsi-meet/blob/master/doc/quick-install.md#install-jitsi-meet)
+
+```bash
+sudo apt -y install apt-transport-https
+sudo apt update
+sudo apt upgrade
+sudo apt -y install jitsi-meet
+```
+
+## Generate a Let's Encrypt certificate [:link:](https://github.com/jitsi/jitsi-meet/blob/master/doc/quick-install.md#generate-a-lets-encrypt-certificate-optional-recommended)
+* ONLY FOR fully qualified domain names like `https://mywebsite.com`
+  * do NOT do this if you will be testing with the IP address
+```bash
+/usr/share/jitsi-meet/scripts/install-letsencrypt-cert.sh
+```
+
+## Test the installation [:link:](https://github.com/jitsi/jitsi-meet/blob/master/doc/quick-install.md#confirm-that-your-installation-is-working)
+```
+https://my.ip.address
+# OR
+https://rtc-meet.mywebsite.com
+```
+
+## Remove [:link:](https://github.com/jitsi/jitsi-meet/blob/master/doc/quick-install.md#uninstall)
+> In case jitsi-meet is no longer needed
+
+* permanently remove the jitsi packages. :warning: Current users will be unceremoniously dropped.
+
+```bash
+sudo apt remove --purge \
+     jigasi jitsi-meet jitsi-meet-web-config \
+     jitsi-meet-prosody jitsi-meet-turnserver \
+     jitsi-meet-web jicofo jitsi-videobridge2 \
+     apt-transport-https
+```
+
+* close the previously opened ports
+```bash
+# delete accept
+sudo iptables -D INPUT -p tcp -m tcp --dport 80 -j ACCEPT
+sudo iptables -D INPUT -p tcp -m tcp --dport 443 -j ACCEPT
+sudo iptables -D INPUT -p udp -m udp --dport 10000 -j ACCEPT
+
+# add reject
+iptables -A INPUT -p tcp --dport 80 -j REJECT
+iptables -A INPUT -p tcp --dport 443 -j REJECT
+iptables -A INPUT -p udp --dport 10000 -j REJECT
+
+iptables -S   # list rules in chain
+iptables -nvL # list all the rules
+```
+
+* remove hidden configuration files
+```bash
+sudo rm -rf ~/.jitsi-meet-cfg/
+```
+
+* remove the jitsi gpg key
+```bash
+sudo apt-key list | less
+# choose the Jitsi hash last eight characters
+sudo apt-key remove NNNNnnnn
+```
+* remove the source list
+```bash
+rm /etc/apt/sources.list.d/jitsi-stable.list
+```
+
+## Reference
+
+* ubuntu iptables manpage [:link:](http://manpages.ubuntu.com/manpages/bionic/en/man8/iptables.8.html)
+
+* ubuntu apt-key manpage [:link:](http://manpages.ubuntu.com/manpages/bionic/en/man8/apt-key.8.html)
+
+* Youtube
+  * IBM Developer Puget Sound
+    * this tutorial [:link:](https://youtu.be/7llu_JX0dNA)
+    * playlist [:link:](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
 
