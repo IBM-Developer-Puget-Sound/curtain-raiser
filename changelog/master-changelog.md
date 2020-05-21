@@ -1,5 +1,10 @@
 # master-changelog
 
+21-May 2020
+  * v0.0.5 bump to merge develop branch
+    * update howto/jitsi meet
+    * remove docker instructions
+
 21-Apr 2020
   * v0.0.4 bump to merge develop branch
     * add howto/fail2ban
