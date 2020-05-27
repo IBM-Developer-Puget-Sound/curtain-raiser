@@ -1,4 +1,4 @@
-### Add a user
+### Add a user [:link:]()
 > where `myusername` is replaced with the
 > actual user screen name
 
@@ -52,3 +52,10 @@ rm -rf /home/myusername
 compgen -u
 ```
 
+### Reference
+* Ubuntu `adduser` [:link:](http://manpages.ubuntu.com/manpages/bionic/en/man8/adduser.8.html)
+
+* Youtube
+  * IBM Developer Puget Sound
+    * this tutorial [:link:]()
+    * playlist [:link:](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
