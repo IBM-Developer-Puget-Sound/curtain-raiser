@@ -53,7 +53,13 @@ compgen -u
 ```
 
 ### Reference
-* Ubuntu `adduser` [:link:](http://manpages.ubuntu.com/manpages/bionic/en/man8/adduser.8.html)
+* Ubuntu
+  * `adduser` [:link:](http://manpages.ubuntu.com/manpages/bionic/en/man8/adduser.8.html)
+  * `usermod` [:link:](http://manpages.ubuntu.com/manpages/bionic/en/man8/usermod.8.html)
+  * `groups` [:link:](http://manpages.ubuntu.com/manpages/bionic/en/man1/groups.1.html)
+  * `deluser` [:link:](http://manpages.ubuntu.com/manpages/bionic/en/man8/deluser.8.html)
+* GNU
+  * `compgen` [:link:](https://www.gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html)
 
 * Youtube
   * IBM Developer Puget Sound
