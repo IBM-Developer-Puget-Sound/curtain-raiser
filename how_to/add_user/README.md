@@ -2,6 +2,11 @@
 > where `myusername` is replaced with the
 > actual user screen name
 
+#### Prerequisite
+1. Provision a Hyper Protect Virtual Server [:link:](../hp_virtual_server/README.md)
+----
+
+
 ```bash
 # logged in as root (or sudoer)
 adduser myusername
