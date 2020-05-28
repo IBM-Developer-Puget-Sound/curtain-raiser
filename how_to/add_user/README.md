@@ -63,5 +63,5 @@ compgen -u
 
 * Youtube
   * IBM Developer Puget Sound
-    * this tutorial [:link:]()
+    * this tutorial [:link:](https://www.youtube.com/watch?v=j-fvecza1tM)
     * playlist [:link:](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
