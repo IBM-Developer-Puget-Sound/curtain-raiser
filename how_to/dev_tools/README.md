@@ -8,10 +8,18 @@
 * IBM Cloud CLI [:link:](https://github.com/IBM-Cloud/ibm-cloud-cli-release) __s390x NOT SUPPORTED__ 
   * cannot consider s390x as an enviroment that can be used to access other parts of the IBM Cloud
 
+
+## Update and upgrade
+
+```bash
+sudo apt update --fix-missing
+sudo apt upgrade
+```
+
 ## Install the packages
 
 ```bash
-sudo apt --yes --force-yes install git tmux curl less
+sudo apt install git tmux curl less
 ```
 
 ## Install Docker

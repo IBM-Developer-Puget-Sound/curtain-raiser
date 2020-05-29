@@ -3,7 +3,7 @@
 ### Prerequisites
 1. Provision a Hyper Protect Virtual Server [:link:](../hp_virtual_server/README.md)
 2. Add sudoer user (ie not root) [:link:](../add_user/README.md)
-3. Install python3 and pip3 [:link:]()
+3. Install python3 and pip3 [:link:](../install_python/README.md)
 
 ## Install python and pip
 
