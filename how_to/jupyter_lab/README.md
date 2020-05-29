@@ -1,33 +1,12 @@
-## How to serve Jupyter Labs for a single user
+## Serve Jupyter Labs for a single user
 
 ### Prerequisites
-* sudoer user (ie not root)
-* python3 and pip3 installed
-* tested on IBM s390x, running Ubuntu xxx
-
-### Adding a user
-```bash
-# as root
-adduser myusername
-cd /home/myusername
-
-mkdir .ssh
-chmod 700 .ssh/
-chown myusername:myusername .ssh
-cd .ssh
-
-touch authorized_keys
-chmod 600 authorized_keys
-chown myusername:myusername authorized_keys
-# copy and paste the public key for `myusername`
-# into the file authorized_keys
-vim authorized_keys
-exit
-```
-
-Exit root and login as `myusername`
+1. Provision a Hyper Protect Virtual Server [:link:](../hp_virtual_server/README.md)
+2. Add sudoer user (ie not root) [:link:](../add_user/README.md)
+3. Install python3 and pip3 [:link:]()
 
 ## Install python and pip
+
 ```bash
 sudo apt install python3
 
@@ -35,6 +14,7 @@ sudo python3 -m pip3 install pip3
 ```
 
 ### Install Jupyter Lab with pip
+> login as the sudoer user
 
 ```bash
 mkdir mynotebooks
