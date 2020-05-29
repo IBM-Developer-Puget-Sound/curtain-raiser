@@ -24,8 +24,8 @@ pip3 install jupyterlab
 ```
 
 ### Add a password for Jupyter Lab
-
-
+* Automatic Password setup [:link:](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#automatic-password-setup)
+* Preparing a hashed password [:link:](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#preparing-a-hashed-password)
 ### Open port 8888
 > This is the default Jupyter port
 ```bash
