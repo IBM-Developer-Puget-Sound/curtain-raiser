@@ -34,5 +34,5 @@ else
 fi
 ```
 
-# Install the virtual environment
+### Install the virtual environment
 sudo apt install python3-venv
