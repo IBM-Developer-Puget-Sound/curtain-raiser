@@ -1,5 +1,9 @@
 # master-changelog
 
+28-May 2020
+  * v0.0.6 bump to merge develop branch
+  * add user instructions
+
 21-May 2020
   * v0.0.5 bump to merge develop branch
     * update howto/jitsi meet
