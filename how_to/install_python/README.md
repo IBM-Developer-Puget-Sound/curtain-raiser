@@ -1,6 +1,12 @@
 ## Install python and pip
-> Python should already be installed with `update` and `upgrade` commands
+> Python should already be installed with `update` and `upgrade` commands,
+
 > however Pip is not automatically installed
+
+### Prerequisites
+1. Provision a Hyper Protect Virtual Server [:link:](../hp_virtual_server/README.md)
+2. Add sudoer user (ie not root) [:link:](../add_user/README.md)
+----
 
 ```bash
 # check if python already installed
@@ -28,3 +34,5 @@ else
 fi
 ```
 
+# Install the virtual environment
+sudo apt install python3-venv

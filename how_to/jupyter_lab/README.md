@@ -3,25 +3,24 @@
 ### Prerequisites
 1. Provision a Hyper Protect Virtual Server [:link:](../hp_virtual_server/README.md)
 2. Add sudoer user (ie not root) [:link:](../add_user/README.md)
-3. Install python3 and pip3 [:link:](../install_python/README.md)
-
-## Install python and pip
-
-```bash
-sudo apt install python3
-
-sudo python3 -m pip3 install pip3
-```
+3. Install python3, pip3 and venv [:link:](../install_python/README.md)
+----
 
 ### Install Jupyter Lab with pip
 > login as the sudoer user
 
 ```bash
-mkdir mynotebooks
-python3 -m venv ~/mynotebooks --prompt myjupyter
-cd mynotebooks
-#pip install jupyter       # ?
-pip install jupyterlab
+sudo apt install jupyter-notebook # required to run lab
+#mkdir mynotebooks
+mkdir myjupyterlab
+mkdir ../myjupyterlab/mynotebooks
+#python3 -m venv ~/mynotebooks --prompt myjupyter
+python3 -m venv ~/myjupyterlab --prompt myjupyter
+#cd mynotebooks 
+cd myjupyterlab
+#pip3 install jupyter       # required to run lab
+pip3 install jupyterlab
+
 ```
 
 ### Add a password for Jupyter Lab
@@ -53,4 +52,8 @@ where nnn.nnn.nnn.nnn is the IP address of the server
 
 ### Uninstall
 > If no longer needed
+
+### Reference
+
+* Jupyter Lab readthedocs [:link:](https://jupyterlab.readthedocs.io/en/stable/)
 
