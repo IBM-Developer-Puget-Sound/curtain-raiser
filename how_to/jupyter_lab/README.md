@@ -16,6 +16,9 @@ mkdir myjupyterlab
 mkdir ../myjupyterlab/mynotebooks
 #python3 -m venv ~/mynotebooks --prompt myjupyter
 python3 -m venv ~/myjupyterlab --prompt myjupyter
+
+# start the virtual environment
+
 #cd mynotebooks 
 cd myjupyterlab
 #pip3 install jupyter       # required to run lab
@@ -26,6 +29,7 @@ pip3 install jupyterlab
 ### Add a password for Jupyter Lab
 * Automatic Password setup [:link:](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#automatic-password-setup)
 * Preparing a hashed password [:link:](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#preparing-a-hashed-password)
+
 ### Open port 8888
 > This is the default Jupyter port
 ```bash
@@ -51,7 +55,24 @@ where nnn.nnn.nnn.nnn is the IP address of the server
 ### Test availability of the process
 
 ### Uninstall
-> If no longer needed
+> If no longer needed, removes all related packages
+
+* stop virtual environment
+* remove virtual environment
+
+```bash
+pip3 uninstall jupyterlab
+sudo apt remove --purge jupyter-notebook
+rm -rf ~/jupyter_lab
+
+# remove port 8888 from iptables
+sudo iptables -D INPUT -p tcp -m tcp --dport 8888 -j ACCEPT
+# list the rules
+sudo iptables -S
+
+# make sure hidden directory is removed
+rm -rf ~/.jupyter
+```
 
 ### Reference
 
