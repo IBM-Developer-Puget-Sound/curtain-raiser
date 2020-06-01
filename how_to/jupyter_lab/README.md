@@ -11,23 +11,24 @@
 
 ```bash
 sudo apt install jupyter-notebook # required to run lab
-#mkdir mynotebooks
 mkdir myjupyterlab
-mkdir ../myjupyterlab/mynotebooks
-#python3 -m venv ~/mynotebooks --prompt myjupyter
+mkdir ./myjupyterlab/mynotebooks
 python3 -m venv ~/myjupyterlab --prompt myjupyter
 
 # start the virtual environment
 
-#cd mynotebooks 
 cd myjupyterlab
-#pip3 install jupyter       # required to run lab
 pip3 install jupyterlab
 
 ```
 
 ### Add a password for Jupyter Lab
 * Automatic Password setup [:link:](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#automatic-password-setup)
+```bash
+jupyter notebook password
+```
+__OR__
+
 * Preparing a hashed password [:link:](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#preparing-a-hashed-password)
 
 ### Open port 8888
@@ -38,18 +39,39 @@ sudo iptables -A INPUT -p tcp --dport 8888 -j ACCEPT
 
 ### Activate Jupyter Lab temporarily
 ```bash
-#sudo jupyter lab --ip=0.0.0.0  --no-browser --allow-root
-jupyter lab --ip=0.0.0.0  --no-browser --allow-root
+jupyter lab --ip=0.0.0.0  --no-browser
 # which will present a typical path and token
+# OR if password has been created, just the path
 ```
 ### Test availability from a browser
-Enter into URL bar of browser
+Enter into web browser URL bar
 ```bash
-http://nnn.nnn.nnn.nnn:8888/?token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+http://nnn.nnn.nnn:8888/?token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+OR if password has been set
+http://nnn.nnn.nnn:8888
 ```
-where nnn.nnn.nnn.nnn is the IP address of the server
+where nnn.nnn.nnn is the IP address of the server
 
 ### Persist Jupyter Lab as a daemon
+
+* create a file in $HOME
+```bash
+#!/bin/sh
+# file: jupyterlab.sh
+# Starts the Jupyter notebook server on port 8888
+# called by the file /etc/systemd/system/jupyterlab.service
+# Expect this file to be set to executable
+#  with command `chmod +x jupyterlab.sh`
+cd ~/myjupyterlab/mynotebooks
+startJupyter="jupyter lab --ip=0.0.0.0 --port=8888 --no-browser"
+echo "$startJupyter"
+$startJupyter
+```
+
+* create another file in `/etc/systemd/system/`
+```bash
+TODO put contents here
+```
 
 
 ### Test availability of the process
@@ -74,7 +96,11 @@ sudo iptables -S
 rm -rf ~/.jupyter
 ```
 
+### TODO
+* TLS not set up yet, communication over insecure connection
+* NodeJS is expected to be on server for managing javascript extensions
+
 ### Reference
 
 * Jupyter Lab readthedocs [:link:](https://jupyterlab.readthedocs.io/en/stable/)
-
+* Persist Jupyer Lab as a service notes from aiafterwork [:link:](https://www.aiafterwork.com/running-jupyterlab-on-ubuntu-startup/) 
