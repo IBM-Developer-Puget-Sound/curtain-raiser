@@ -1,4 +1,4 @@
-## Serve Jupyter Labs for a single user
+## Serve Jupyter Lab for a single user
 
 ### Prerequisites
 1. Provision a Hyper Protect Virtual Server [:link:](../hp_virtual_server/README.md)
@@ -68,13 +68,29 @@ echo "$startJupyter"
 $startJupyter
 ```
 
-* create another file in `/etc/systemd/system/`
+* create a service file in directory `/etc/systemd/system/`
+  * for example `sudo vim /etc/systemd/system/jupyterlab.service`
 ```bash
-TODO put contents here
+[Unit]
+Description=JupyterLab
+After=syslog.target network.target
+[Service]
+User=putmyusernamehere
+ExecStart=/bin/bash /home/putmyusernamehere/jupyterlab.sh
+[Install]
+WantedBy=multi-user.target
 ```
+### Start the service
+sudo systemctl enable jupyterlab.service
+sudo service jupyterlab start
+sudo service jupyterlab status
 
-
-### Test availability of the process
+### Test availability of the service
+Enter into web browser URL bar
+```bash
+# if password has been set
+http://nnn.nnn.nnn:8888
+```
 
 ### Uninstall
 > If no longer needed, removes all related packages
@@ -103,4 +119,5 @@ rm -rf ~/.jupyter
 ### Reference
 
 * Jupyter Lab readthedocs [:link:](https://jupyterlab.readthedocs.io/en/stable/)
-* Persist Jupyer Lab as a service notes from aiafterwork [:link:](https://www.aiafterwork.com/running-jupyterlab-on-ubuntu-startup/) 
+* Persist Jupyer Lab as a service notes from aiafterwork [:link:](https://www.aiafterwork.com/running-jupyterlab-on-ubuntu-startup/)
+* systemd directives [:link:](https://www.freedesktop.org/software/systemd/man/systemd.directives.html)
