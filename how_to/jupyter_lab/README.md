@@ -3,8 +3,9 @@
 ### Prerequisites
 1. Provision a Hyper Protect Virtual Server [:link:](../hp_virtual_server/README.md)
 2. Add sudoer user (ie not root) [:link:](../add_user/README.md)
-3. Install `python3`, `pip3` and `venv` [:link:](../install_python/README.md)
-4. Install `iptables-persistent` [:link:](../install_iptables_persistent/README.md)
+3. Install essential packages for devops [:link:](../dev_tools/READ.me)
+4. Install `python3`, `pip3` and `venv` [:link:](../install_python/README.md)
+5. Install `iptables-persistent` [:link:](../iptables_persistent/README.md)
 ----
 
 ### Install Jupyter Lab with pip
@@ -35,7 +36,10 @@ __OR__
 ### Open port 8888
 > This is the default Jupyter port
 ```bash
+# add a rule
 sudo iptables -A INPUT -p tcp --dport 8888 -j ACCEPT
+# make the iptables changes persistent after reboot
+sudo iptables-save > /etc/iptables/rules.v4
 ```
 
 ### Activate Jupyter Lab temporarily
@@ -146,3 +150,7 @@ rm -rf ~/.jupyter
 * Jupyter Lab readthedocs [:link:](https://jupyterlab.readthedocs.io/en/stable/)
 * Persist Jupyer Lab as a service notes from aiafterwork [:link:](https://www.aiafterwork.com/running-jupyterlab-on-ubuntu-startup/)
 * systemd directives [:link:](https://www.freedesktop.org/software/systemd/man/systemd.directives.html)
+
+* Ubuntu
+  * ipatbles how to [:link:](https://help.ubuntu.com/community/IptablesHowTo)
+  * iptables-save [:link:](http://manpages.ubuntu.com/manpages/bionic/en/man8/iptables-save.8.html)
