@@ -3,7 +3,8 @@
 ### Prerequisites
 1. Provision a Hyper Protect Virtual Server [:link:](../hp_virtual_server/README.md)
 2. Add sudoer user (ie not root) [:link:](../add_user/README.md)
-3. Install python3, pip3 and venv [:link:](../install_python/README.md)
+3. Install `python3`, `pip3` and `venv` [:link:](../install_python/README.md)
+4. Install `iptables-persistent` [:link:](../install_iptables_persistent/README.md)
 ----
 
 ### Install Jupyter Lab with pip
@@ -57,7 +58,7 @@ where nnn.nnn.nnn is the IP address of the server
 * create a file in $HOME
 ```bash
 #!/bin/sh
-# file: jupyterlab.sh
+# filename: jupyterlab.sh
 # Starts the Jupyter notebook server on port 8888
 # called by the file /etc/systemd/system/jupyterlab.service
 # Expect this file to be set to executable
@@ -81,15 +82,39 @@ ExecStart=/bin/bash /home/putmyusernamehere/jupyterlab.sh
 WantedBy=multi-user.target
 ```
 ### Start the service
+```bash
 sudo systemctl enable jupyterlab.service
 sudo service jupyterlab start
+
+# optionally
+#   check the status
 sudo service jupyterlab status
+
+#   see log file entry
+tail /var/log/syslog
+```
 
 ### Test availability of the service
 Enter into web browser URL bar
 ```bash
 # if password has been set
 http://nnn.nnn.nnn:8888
+```
+> may need to close and reopen browser to reset
+> password cookies
+
+
+### Reboot Server to re-test availability of service
+```bash
+sudo reboot
+```
+* Test availability of service as noted above
+
+troubeshooting
+* Confirm that the iptables have been reloaded
+  with the port 8888 rule.
+```bash
+sudo iptables -S
 ```
 
 ### Uninstall
