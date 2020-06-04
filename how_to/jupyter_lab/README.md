@@ -20,7 +20,7 @@ mkdir ./myjupyterlab/mynotebooks
 python3 -m venv ~/myjupyterlab --prompt myjupyter
 
 # activate the virtual environment
-source myjupyterlab/bin/activate
+source ./myjupyterlab/bin/activate
 
 cd myjupyterlab
 pip3 install jupyterlab
@@ -42,11 +42,12 @@ __OR__
 # add a rule
 sudo iptables -A INPUT -p tcp --dport 8888 -j ACCEPT
 # make the iptables changes persistent after reboot
-sudo iptables-save > /etc/iptables/rules.v4
+sudo netfilter-persistent save
 ```
 
 ### Activate Jupyter Lab temporarily
 ```bash
+cd ~/myjupyterlab/mynotebooks
 jupyter lab --ip=0.0.0.0  --no-browser
 # which will present a typical path and token
 # OR if password has been created, just the path
@@ -64,18 +65,25 @@ http://nnn.nnn.nnn:8888
 
 ### Persist Jupyter Lab as a service
 
-* create a file in $HOME
+* create a file `~/jupyterlab.sh`
 ```bash
 #!/bin/sh
 # filename: jupyterlab.sh
 # Starts the Jupyter notebook server on port 8888
 # called by the file /etc/systemd/system/jupyterlab.service
-# Expect this file to be set to executable
+# Set this file to executable
 #  with command `chmod +x jupyterlab.sh`
+
+# get path of this script
+DIR="/home/myusernamehere"
+
+localjupyter=$DIR"/.local/bin/jupyter"
 cd ~/myjupyterlab/mynotebooks
-startJupyter="jupyter lab --ip=0.0.0.0 --port=8888 --no-browser"
+startJupyter="$localjupyter lab --ip=0.0.0.0 --port=8888 --no-browser"
+#echo "startJupyter: "$startJupyter
 logger "$startJupyter"
 $startJupyter
+
 ```
 
 * create a service file in directory `/etc/systemd/system/`
