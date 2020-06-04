@@ -35,4 +35,9 @@ fi
 ```
 
 ### Install the virtual environment
+```bash
 sudo apt install python3-venv
+```
+
+### Reference
+* virtual environment [:link:](https://docs.python.org/3/tutorial/venv.html#virtual-environments-and-packages)
