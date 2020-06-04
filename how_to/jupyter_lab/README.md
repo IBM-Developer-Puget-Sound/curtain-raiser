@@ -167,5 +167,5 @@ sudo rm /etc/systemd/system/jupyterlab.service
 * systemd directives [:link:](https://www.freedesktop.org/software/systemd/man/systemd.directives.html)
 
 * Ubuntu
-  * ipatbles how to [:link:](https://help.ubuntu.com/community/IptablesHowTo)
+  * iptables how to [:link:](https://help.ubuntu.com/community/IptablesHowTo)
   * iptables-save [:link:](http://manpages.ubuntu.com/manpages/bionic/en/man8/iptables-save.8.html)
