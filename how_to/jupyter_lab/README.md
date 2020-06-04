@@ -140,7 +140,7 @@ deactivate
 ```bash
 pip3 uninstall jupyterlab
 sudo apt remove --purge jupyter-notebook
-rm -rf ~/jupyter_lab
+rm -rf ~/myjupyterlab
 
 # remove port 8888 from iptables
 sudo iptables -D INPUT -p tcp -m tcp --dport 8888 -j ACCEPT
