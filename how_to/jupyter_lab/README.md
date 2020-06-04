@@ -15,9 +15,12 @@
 sudo apt install jupyter-notebook # required to run lab
 mkdir myjupyterlab
 mkdir ./myjupyterlab/mynotebooks
+
+# create a virtual environmet
 python3 -m venv ~/myjupyterlab --prompt myjupyter
 
-# start the virtual environment
+# activate the virtual environment
+source myjupyterlab/bin/activate
 
 cd myjupyterlab
 pip3 install jupyterlab
@@ -55,9 +58,11 @@ http://nnn.nnn.nnn:8888/?token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 OR if password has been set
 http://nnn.nnn.nnn:8888
 ```
-where nnn.nnn.nnn is the IP address of the server
+> where nnn.nnn.nnn is the IP address of the server
 
-### Persist Jupyter Lab as a daemon
+> note this is not a secured connection ie __not__ https
+
+### Persist Jupyter Lab as a service
 
 * create a file in $HOME
 ```bash
@@ -69,7 +74,7 @@ where nnn.nnn.nnn is the IP address of the server
 #  with command `chmod +x jupyterlab.sh`
 cd ~/myjupyterlab/mynotebooks
 startJupyter="jupyter lab --ip=0.0.0.0 --port=8888 --no-browser"
-echo "$startJupyter"
+logger "$startJupyter"
 $startJupyter
 ```
 
@@ -125,6 +130,11 @@ sudo iptables -S
 > If no longer needed, removes all related packages
 
 * stop virtual environment
+```bash
+cd ~/myjupyterlab
+deactivate
+```
+
 * remove virtual environment
 
 ```bash
@@ -139,6 +149,11 @@ sudo iptables -S
 
 # make sure hidden directory is removed
 rm -rf ~/.jupyter
+
+# remove start up scripts
+rm ~/jupyterlab.sh
+sudo rm /etc/systemd/system/jupyterlab.service
+
 ```
 
 ### TODO
