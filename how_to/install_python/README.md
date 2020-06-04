@@ -34,7 +34,7 @@ else
 fi
 ```
 
-### Install the virtual environment
+### Install the virtual environment package
 ```bash
 sudo apt install python3-venv
 ```
