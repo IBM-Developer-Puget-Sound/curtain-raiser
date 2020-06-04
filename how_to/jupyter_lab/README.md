@@ -147,6 +147,9 @@ sudo iptables -D INPUT -p tcp -m tcp --dport 8888 -j ACCEPT
 # list the rules
 sudo iptables -S
 
+# save the update
+sudo netfilter-persistent save
+
 # make sure hidden directory is removed
 rm -rf ~/.jupyter
 
@@ -154,6 +157,8 @@ rm -rf ~/.jupyter
 rm ~/jupyterlab.sh
 sudo rm /etc/systemd/system/jupyterlab.service
 
+# restart the server
+sudo reboot
 ```
 
 ### TODO
