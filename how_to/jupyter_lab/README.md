@@ -80,7 +80,11 @@ DIR="/home/myusernamehere"
 localjupyter=$DIR"/.local/bin/jupyter"
 cd ~/myjupyterlab/mynotebooks
 startJupyter="$localjupyter lab --ip=0.0.0.0 --port=8888 --no-browser"
-#echo "startJupyter: "$startJupyter
+
+# activate the virtual environment
+logger "$DIR/myjupyterlab/bin/activate python virtual environment"
+source $DIR/myjupyterlab/bin/activate
+
 logger "$startJupyter"
 $startJupyter
 
