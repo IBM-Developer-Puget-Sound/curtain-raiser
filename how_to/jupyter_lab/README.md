@@ -138,6 +138,23 @@ troubeshooting
 sudo iptables -S
 ```
 
+### SSH tunneling from terminal of local pc with available ssh [:link:](https://www.blopig.com/blog/2018/03/running-jupyter-notebook-on-a-remote-server-via-ssh/)
+> to the port hosting JupyterLab on the server
+
+```bash
+ssh -N -f -L 8888:localhost:8888 myusernamehere@nnn.nnn.nnn.nnn
+```
+* -N tells ssh we won’t be running any remote processes using the connection. This is useful for situations like this where all we want to do is port forwarding.
+
+* -f runs ssh in the background, so we don’t need to keep a terminal session running just for the tunnel.
+
+* -L specifies that we’ll be forwarding a local port to a remote address and port. In this case, we’re forwarding port 8888 on our machine to port 8888 on the remote server. The name ‘localhost’ just means ‘this computer’. If you’re a Java programmer who lives for verbosity, you could equivalently pass -L localhost:8888:localhost:8888.
+
+
+
+
+
+
 ### Uninstall
 > If no longer needed, removes all related packages
 
