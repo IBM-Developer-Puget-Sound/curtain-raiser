@@ -57,7 +57,7 @@ Enter into web browser URL bar
 ```bash
 http://nnn.nnn.nnn:8888/?token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 OR if password has been set
-http://nnn.nnn.nnn:8888
+http://nnn.nnn.nnn.nnn:8888
 ```
 > where nnn.nnn.nnn is the IP address of the server
 
@@ -119,7 +119,7 @@ tail /var/log/syslog
 Enter into web browser URL bar
 ```bash
 # if password has been set
-http://nnn.nnn.nnn:8888
+http://nnn.nnn.nnn.nnn:8888
 ```
 > may need to close and reopen browser to reset
 > password cookies
