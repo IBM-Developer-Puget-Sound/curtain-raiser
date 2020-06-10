@@ -66,6 +66,15 @@ http://nnn.nnn.nnn.nnn:8888
 
 ### Persist Jupyter Lab as a service
 
+> Remember the virtual environment is activated, 
+> where is jupyter?
+```bash
+# try
+which jupyter
+# should return
+#   `/home/myusernamehere/myjupyterlab/bin/jupyter`
+
+```
 * create a file `~/jupyterlab.sh`
 ```bash
 #!/bin/sh
@@ -78,7 +87,7 @@ http://nnn.nnn.nnn.nnn:8888
 # get path of this script
 DIR="/home/myusernamehere"
 
-localjupyter=$DIR"/.local/bin/jupyter"
+localjupyter=$DIR"/myjupyterlab/bin/jupyter"
 cd ~/myjupyterlab/mynotebooks
 startJupyter="$localjupyter lab --ip=0.0.0.0 --port=8888 --no-browser"
 
