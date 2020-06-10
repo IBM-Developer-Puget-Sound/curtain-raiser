@@ -13,8 +13,8 @@
 
 ```bash
 sudo apt install jupyter-notebook # required to run lab
-mkdir myjupyterlab
-mkdir ./myjupyterlab/mynotebooks
+mkdir ~/myjupyterlab
+mkdir ~/myjupyterlab/mynotebooks
 
 # create a virtual environmet
 python3 -m venv ~/myjupyterlab --prompt myjupyter
@@ -23,6 +23,7 @@ python3 -m venv ~/myjupyterlab --prompt myjupyter
 source ./myjupyterlab/bin/activate
 
 cd myjupyterlab
+pip3 install Cython
 pip3 install jupyterlab
 
 ```
