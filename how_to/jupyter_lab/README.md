@@ -158,9 +158,12 @@ ssh -N -f -L 8888:localhost:8888 myusernamehere@nnn.nnn.nnn.nnn
 
 * -f runs ssh in the background, so we don’t need to keep a terminal session running just for the tunnel.
 
-* -L specifies that we’ll be forwarding a local port to a remote address and port. In this case, we’re forwarding port 8888 on our machine to port 8888 on the remote server. The name ‘localhost’ just means ‘this computer’. If you’re a Java programmer who lives for verbosity, you could equivalently pass -L localhost:8888:localhost:8888.
+* -L specifies that we’ll be forwarding a local port to a remote address and port. In this case, we’re forwarding port 8888 on our machine to port 8888 on the remote server. The name ‘localhost’ just means ‘this computer’.
 
-
+To see all processes listening on any port and to confirm the port forwarding/tunnelling
+```bash
+sudo ss -nltp
+```
 
 
 
