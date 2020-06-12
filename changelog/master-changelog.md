@@ -1,5 +1,9 @@
 # master-changelog
 
+12-June 2020
+  * v0.0.7 bump to merge develop branch
+  * add server jupyter lab notes
+
 28-May 2020
   * v0.0.6 bump to merge develop branch
   * add user instructions
