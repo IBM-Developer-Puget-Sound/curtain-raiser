@@ -46,7 +46,7 @@ sudo iptables -A INPUT -p tcp --dport 8888 -j ACCEPT
 sudo netfilter-persistent save
 ```
 
-### Activate Jupyter Lab temporarily
+### Activate Jupyter Lab temporarily [:link:](https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html#starting-jupyterlab)
 ```bash
 cd ~/myjupyterlab/mynotebooks
 jupyter lab --ip=0.0.0.0  --no-browser
