@@ -56,11 +56,11 @@ jupyter lab --ip=0.0.0.0  --no-browser
 ### Test availability from a browser
 Enter into web browser URL bar
 ```bash
-http://nnn.nnn.nnn:8888/?token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+http://nnn.nnn.nnn.nnn:8888/?token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 OR if password has been set
 http://nnn.nnn.nnn.nnn:8888
 ```
-> where nnn.nnn.nnn is the IP address of the server
+> where nnn.nnn.nnn.nnn is the IP address of the server
 
 > note this is not a secured connection ie __not__ https
 
@@ -107,8 +107,8 @@ $startJupyter
 Description=JupyterLab
 After=syslog.target network.target
 [Service]
-User=putmyusernamehere
-ExecStart=/bin/bash /home/putmyusernamehere/jupyterlab.sh
+User=myusernamehere
+ExecStart=/bin/bash /home/myusernamehere/jupyterlab.sh
 [Install]
 WantedBy=multi-user.target
 ```
@@ -204,7 +204,6 @@ sudo reboot
 ```
 
 ### TODO
-* TLS not set up yet, communication over insecure connection
 * NodeJS is expected to be on server for managing javascript extensions
 
 ### Reference
@@ -216,3 +215,8 @@ sudo reboot
 * Ubuntu
   * iptables how to [:link:](https://help.ubuntu.com/community/IptablesHowTo)
   * iptables-save [:link:](http://manpages.ubuntu.com/manpages/bionic/en/man8/iptables-save.8.html)
+
+* Youtube
+  * IBM Developer Puget Sound
+    * this tutorial [:link:](https://youtu.be/YiLAcWtYS-k)
+    * playlist [:link:](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
