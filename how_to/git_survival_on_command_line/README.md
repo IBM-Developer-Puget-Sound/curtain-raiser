@@ -177,7 +177,7 @@ to __document a repeatable flow__ for our purpose.
 
 ----
 #### Flow Goal
-![flow-goal](./assets/images/flow-goal.PNG)
+![flow-goal](./assets/images/flow-goal.png)
 > Create a develop branch from the master,
 checkout a feature branch from develop, make
 some commits on that feature branch, then merge
