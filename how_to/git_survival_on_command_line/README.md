@@ -7,6 +7,22 @@ a particular commit state.
 
 ![banner](./assets/images/banner.png)
 
+#### Prerequisites
+  1. Install git [:link:](https://github.com/IBM-Developer-Puget-Sound/curtain-raiser/tree/master/how_to/dev_tools#install-the-packages)
+
+  2. Install python3 [:link:](https://github.com/IBM-Developer-Puget-Sound/curtain-raiser/tree/master/how_to/install_python#install-python-and-pip)
+
+  ```bash
+  # the following examples tested on
+  uname -ior
+  5.5.6-201.fc31.x86_64 x86_64 GNU/Linux
+
+  python3 --version
+  Python 3.7.4
+
+  git --version
+  git version 2.24.1
+  ```
 
 #### Initializing a project
   1. From an existing repository
@@ -310,13 +326,13 @@ git diff 5e111d7 831fc17
 $ git log --graph --oneline --all --decorate
 # notice where the HEAD is
 *   96fdc9b (HEAD, tag: v0.0.1, master) merge branch develop into master
-|\  
+|\
 | *   83f1760 (develop) merge branch calculator-feature into develop
-| |\  
-|/ /  
+| |\
+|/ /
 | * 831fc17 (calculator-feature) add file
 | * 5e111d7 add file
-|/  
+|/
 * 627d118 replace last commit msg
 
 # # #
@@ -327,16 +343,16 @@ HEAD is now at 627d118... replace last commit msg
 
 $ git log --graph --oneline --all --decorate
 *   96fdc9b (tag: v0.0.1, master) merge branch develop into master
-|\  
+|\
 | *   83f1760 (develop) merge branch calculator-feature into develop
-| |\  
-|/ /  
+| |\
+|/ /
 | * 831fc17 (calculator-feature) add file
 | * 5e111d7 add file
-|/  
+|/
 * 627d118 (HEAD) replace last commit msg
 # if necessary a new branch could be created
-# from here 
+# from here
 ```
 
 ----
@@ -389,7 +405,8 @@ See "Setting up a remote repository" as a separate topic.
 
 ----
 
-#### References
+#### Reference
+
 1. SCM: https://en.wikipedia.org/wiki/Software_configuration_management
 
 2. git-config: https://git-scm.com/docs/git-config
@@ -425,3 +442,8 @@ See "Setting up a remote repository" as a separate topic.
 
 15. IBM garage method, gitlab: https://www.ibm.com/garage/method/practices/code/tool_gitlab
 
+* Youtube
+
+   * IBM Developer Puget Sound
+     * tutorial [:link:]()
+     * playlist [:link:](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
