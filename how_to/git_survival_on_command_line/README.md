@@ -13,7 +13,7 @@ a particular commit state.
   2. Install python3 [:link:](https://github.com/IBM-Developer-Puget-Sound/curtain-raiser/tree/master/how_to/install_python#install-python-and-pip)
 
   ```bash
-  # the following examples tested on
+  # the following examples tested with
   uname -ior
   5.5.6-201.fc31.x86_64 x86_64 GNU/Linux
 
@@ -445,5 +445,5 @@ See "Setting up a remote repository" as a separate topic.
 * Youtube
 
    * IBM Developer Puget Sound
-     * tutorial [:link:]()
+     * this tutorial [:link:]()
      * playlist [:link:](https://www.youtube.com/playlist?list=PL-j7VyctKguuCO8WkzaYauh4NosbtGLC_)
