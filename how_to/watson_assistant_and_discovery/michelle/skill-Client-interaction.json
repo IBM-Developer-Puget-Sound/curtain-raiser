@@ -1,0 +1,3193 @@
+{
+  "intents": [
+    {
+      "intent": "agreeable",
+      "examples": [
+        {
+          "text": "ok"
+        },
+        {
+          "text": "okay"
+        },
+        {
+          "text": "probably"
+        },
+        {
+          "text": "roger"
+        },
+        {
+          "text": "sure"
+        },
+        {
+          "text": "\"why not\""
+        },
+        {
+          "text": "y"
+        },
+        {
+          "text": "yes"
+        }
+      ],
+      "description": "Affirmative response"
+    },
+    {
+      "intent": "AI",
+      "examples": [
+        {
+          "text": "AI"
+        },
+        {
+          "text": "artificial intelligence"
+        }
+      ],
+      "description": "Artificial intelligence"
+    },
+    {
+      "intent": "alt-topics",
+      "examples": [
+        {
+          "text": "\"alternate topics\""
+        },
+        {
+          "text": "analytics"
+        },
+        {
+          "text": "API"
+        },
+        {
+          "text": "\"API Connect\""
+        },
+        {
+          "text": "AppID"
+        },
+        {
+          "text": "Application Programming Interface"
+        },
+        {
+          "text": "Assistant"
+        },
+        {
+          "text": "Can you implement a virtual assistant for my company"
+        },
+        {
+          "text": "Discovery"
+        },
+        {
+          "text": "Internet of Things"
+        },
+        {
+          "text": "IOT"
+        },
+        {
+          "text": "Let's talk about API's"
+        },
+        {
+          "text": "Let's talk about data science"
+        },
+        {
+          "text": "Let's talk about IOT"
+        },
+        {
+          "text": "Let's talk about LinuxONE"
+        },
+        {
+          "text": "LinuxONE"
+        },
+        {
+          "text": "Loopback"
+        },
+        {
+          "text": "LoRa"
+        },
+        {
+          "text": "machine learning"
+        },
+        {
+          "text": "MQTT"
+        },
+        {
+          "text": "NodeRED"
+        },
+        {
+          "text": "OpenAPI"
+        },
+        {
+          "text": "repeat list of IBM products and services"
+        },
+        {
+          "text": "security"
+        },
+        {
+          "text": "Verify"
+        },
+        {
+          "text": "Watson Assistant"
+        },
+        {
+          "text": "Watson Discovery"
+        }
+      ],
+      "description": "Topics other than Python"
+    },
+    {
+      "intent": "bot",
+      "examples": [
+        {
+          "text": "\"Are you a bot\""
+        },
+        {
+          "text": "\"Are you a chatbot\""
+        },
+        {
+          "text": "\"Are you a person\""
+        },
+        {
+          "text": "\"Are you a real person\""
+        },
+        {
+          "text": "bot"
+        }
+      ],
+      "description": "Discuss my past"
+    },
+    {
+      "intent": "cheat-sheet",
+      "examples": [
+        {
+          "text": "cheat"
+        },
+        {
+          "text": "cheat sheet"
+        },
+        {
+          "text": "python cheat sheet"
+        }
+      ],
+      "description": "Short sweet python examples"
+    },
+    {
+      "intent": "disagreeable",
+      "examples": [
+        {
+          "text": "n"
+        },
+        {
+          "text": "no"
+        },
+        {
+          "text": "not"
+        },
+        {
+          "text": "unsure"
+        }
+      ],
+      "description": "Negative response"
+    },
+    {
+      "intent": "farewell",
+      "examples": [
+        {
+          "text": "a hui hou"
+        },
+        {
+          "text": "auf wiedersehen"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "goodbye"
+        },
+        {
+          "text": "good bye"
+        },
+        {
+          "text": "see ya"
+        },
+        {
+          "text": "see ya' later"
+        },
+        {
+          "text": "See ya' round"
+        },
+        {
+          "text": "see you around"
+        },
+        {
+          "text": "see you later"
+        },
+        {
+          "text": "take care"
+        }
+      ],
+      "description": "Conversation end"
+    },
+    {
+      "intent": "gratitude",
+      "examples": [
+        {
+          "text": "I appreciate your time"
+        },
+        {
+          "text": "It was so awesome of you"
+        },
+        {
+          "text": "Keep up the good work"
+        },
+        {
+          "text": "Thanks a million"
+        },
+        {
+          "text": "Thanks a ton"
+        },
+        {
+          "text": "Thank you!"
+        },
+        {
+          "text": "What would I do without you?"
+        },
+        {
+          "text": "You are the best"
+        },
+        {
+          "text": "Your a sweetheart"
+        },
+        {
+          "text": "Your the best"
+        }
+      ],
+      "description": "Grateful client"
+    },
+    {
+      "intent": "greeting",
+      "examples": [
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "How are you today?"
+        }
+      ],
+      "description": "Initiate a conversation"
+    },
+    {
+      "intent": "hire",
+      "examples": [
+        {
+          "text": "hire-vv"
+        },
+        {
+          "text": "IBM"
+        }
+      ],
+      "description": "Solutions from Vivid Ventures "
+    },
+    {
+      "intent": "IDE",
+      "examples": [
+        {
+          "text": "integrated development environment"
+        },
+        {
+          "text": "python IDE"
+        }
+      ],
+      "description": "Recommend intgrated development environment"
+    },
+    {
+      "intent": "job-search",
+      "examples": [
+        {
+          "text": "Are you hiring"
+        },
+        {
+          "text": "Do you know anyone who is hiring"
+        },
+        {
+          "text": "I am looking for job"
+        },
+        {
+          "text": "where can I find work"
+        }
+      ],
+      "description": "Guest is looking for work"
+    },
+    {
+      "intent": "learn-python",
+      "examples": [
+        {
+          "text": "I need a tutorial"
+        },
+        {
+          "text": "I want to learn python"
+        },
+        {
+          "text": "python beginners tutorial"
+        },
+        {
+          "text": "python tutorial"
+        },
+        {
+          "text": "Recommend a python tutorial"
+        },
+        {
+          "text": "tut"
+        }
+      ],
+      "description": "Look for tutorials about python"
+    },
+    {
+      "intent": "need-help",
+      "examples": [
+        {
+          "text": "\"Can you build a chatbot for our website\""
+        },
+        {
+          "text": "\"Can you help us with our chatbot\""
+        },
+        {
+          "text": "virtual assistant"
+        },
+        {
+          "text": "We need a company to help us with our chatbot."
+        }
+      ],
+      "description": "Guest needs a subject matter expert"
+    },
+    {
+      "intent": "object-oriented-python",
+      "examples": [
+        {
+          "text": "Tell me about object oriented python"
+        }
+      ],
+      "description": "Learn about object oriented Python"
+    },
+    {
+      "intent": "python-course",
+      "examples": [
+        {
+          "text": "a different python course"
+        },
+        {
+          "text": "another course"
+        },
+        {
+          "text": "Can you recommend another course"
+        },
+        {
+          "text": "I am looking for a course in python"
+        },
+        {
+          "text": "more python courses"
+        },
+        {
+          "text": "python course"
+        },
+        {
+          "text": "python learning path"
+        }
+      ],
+      "description": "Study python with a syllabus"
+    },
+    {
+      "intent": "python-events",
+      "examples": [
+        {
+          "text": "community"
+        },
+        {
+          "text": "Do you know of any good meetups?"
+        },
+        {
+          "text": "Do you know of any local meetups?"
+        },
+        {
+          "text": "I am lonely"
+        },
+        {
+          "text": "meet people who program in python"
+        },
+        {
+          "text": "more meetups"
+        },
+        {
+          "text": "more python meetups"
+        },
+        {
+          "text": "python community"
+        },
+        {
+          "text": "python convention"
+        },
+        {
+          "text": "python meetup"
+        },
+        {
+          "text": "python users group"
+        }
+      ],
+      "description": "List of events related to python"
+    },
+    {
+      "intent": "python-hints",
+      "examples": [
+        {
+          "text": "help"
+        },
+        {
+          "text": "more python hints"
+        },
+        {
+          "text": "python hints"
+        }
+      ],
+      "description": "Suggest a list of questions the guest could ask."
+    },
+    {
+      "intent": "python-keywords",
+      "examples": [
+        {
+          "text": "What are the python keywords"
+        }
+      ],
+      "description": "Find a list of Python keywords"
+    },
+    {
+      "intent": "python-lists",
+      "examples": [
+        {
+          "text": "python lists"
+        }
+      ],
+      "description": "Find awesome lists of references"
+    },
+    {
+      "intent": "python-patterns",
+      "examples": [
+        {
+          "text": "I want to learn about python patterns"
+        },
+        {
+          "text": "Tell me more about python patterns"
+        }
+      ],
+      "description": "Learn about python patterns"
+    },
+    {
+      "intent": "python-youtube",
+      "examples": [
+        {
+          "text": "Can you suggest some youtube videos"
+        },
+        {
+          "text": "Do you know of an good python youtube videos?"
+        },
+        {
+          "text": "What is your favorite python youtube video?"
+        }
+      ],
+      "description": "Guest wants a recommended youtube video about python"
+    },
+    {
+      "intent": "repetition",
+      "examples": [
+        {
+          "text": "You're repeating yourself"
+        },
+        {
+          "text": "Your repeating yourself"
+        },
+        {
+          "text": "You said that already"
+        }
+      ],
+      "description": "Client notices repetetive answers"
+    },
+    {
+      "intent": "sad",
+      "examples": [
+        {
+          "text": "cry"
+        },
+        {
+          "text": "grieve"
+        },
+        {
+          "text": "heartbroken"
+        },
+        {
+          "text": "I am so lonely I could cry"
+        },
+        {
+          "text": "in the dumps"
+        },
+        {
+          "text": "sad"
+        }
+      ],
+      "description": "guest expressed some kind of sadness emotion"
+    },
+    {
+      "intent": "start-over",
+      "examples": [
+        {
+          "text": "clear"
+        },
+        {
+          "text": "go to the beginning"
+        },
+        {
+          "text": "restart"
+        },
+        {
+          "text": "start over"
+        }
+      ],
+      "description": "Guest wants to be re-welcomed"
+    },
+    {
+      "intent": "weather",
+      "examples": [
+        {
+          "text": "weather"
+        },
+        {
+          "text": "What is the weather forecast"
+        }
+      ],
+      "description": "A bit off topic, however we can discuss it anyway"
+    },
+    {
+      "intent": "website-design",
+      "examples": [
+        {
+          "text": "Can you build a website for my company"
+        }
+      ],
+      "description": "Guest wants someone to design a website for thier business"
+    },
+    {
+      "intent": "what-is",
+      "examples": [
+        {
+          "text": "What is Python?"
+        }
+      ],
+      "description": "Initial possible question"
+    },
+    {
+      "intent": "what-kind",
+      "examples": [
+        {
+          "text": "What kind of applications can be built with python"
+        },
+        {
+          "text": "Why would I use python"
+        }
+      ],
+      "description": "Applications built with python"
+    },
+    {
+      "intent": "who-is",
+      "examples": [
+        {
+          "text": "Companies that use python"
+        },
+        {
+          "text": "Organizations using python"
+        },
+        {
+          "text": "Who is using python"
+        }
+      ],
+      "description": "Who is using python"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "algorithms",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "combinatorial",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "dynamic",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "graph-traversal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "heuristic",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "searching",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sorting",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "API",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "API",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "API Connect",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Application Programming Interface",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Loopback",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Open API",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "data-science",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "analytics",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "data science",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "machine learning",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "optimization",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "predictions",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "data-structure",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "\"binary tree\"",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "dictionary",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "list",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "queue",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sequence",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "set",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "stack",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tuple",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "internet-of-things",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "IOT",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LoRa",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "MQTT",
+          "synonyms": [
+            "Message Queuing Telemetry Transport"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Node RED",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Watson IOT Platform",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "LinuxONE",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "hybrid cloud",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "LinuxONE",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "minimize server sprawl",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Red Hat Enterprise Linux",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "mulitcloud",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "amazon web services",
+          "synonyms": [
+            "aws"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "google",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "microsoft",
+          "synonyms": [
+            "azure"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "multicloud",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "paradigm",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Functional",
+          "synonyms": [
+            "functional python"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "\"Object Oriented\"",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "patterns",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "abstract-factory",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "adapter",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "bridge",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "builder",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "composite",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "decorator",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "factory",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "flyweight",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "iterator",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "patterns",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "prototype",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "python patterns",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "singleton",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "security",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "AppID",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "authentication",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "identity",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "security",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Verify",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "semantic",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "assignment",
+          "synonyms": [
+            "\"python assignment\""
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "flow control",
+          "synonyms": [
+            "flow",
+            "\"python flow control\""
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "iterator",
+          "synonyms": [
+            "\"python iterator\""
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "operator",
+          "synonyms": [
+            "\"python operator\""
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Watson",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "assistant",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "discovery",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "studio",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "watson",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_9_1597153998135",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1598039352955",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1598039352958",
+      "previous_sibling": "handler_5_1598039352958"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1598040665771",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1598040665776",
+      "previous_sibling": "handler_3_1598040665776"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1598045143073",
+      "context": {
+        "data_science__machine": "@data-science:(machine learning)"
+      },
+      "conditions": "@data-science:(machine learning)",
+      "event_name": "input",
+      "dialog_node": "handler_10_1598045143080"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1598048741597",
+      "context": {
+        "Watson_assistant": "@Watson:assistant"
+      },
+      "conditions": "@Watson:assistant",
+      "event_name": "input",
+      "dialog_node": "handler_10_1598048741614"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1598063924516",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1598063924518",
+      "previous_sibling": "handler_8_1598063924518"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1598067841568",
+      "context": {
+        "hire_vv": "#hire"
+      },
+      "conditions": "#hire",
+      "event_name": "input",
+      "dialog_node": "handler_10_1598067841598"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1598035806655",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1598035806678",
+      "previous_sibling": "handler_7_1598035806678"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1598043679473",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1598043679491",
+      "previous_sibling": "handler_7_1598043679491"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_7_1598030033113",
+      "event_name": "focus",
+      "dialog_node": "handler_14_1599018762285"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_1_1599017181158",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_15_1599018821864"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_2_1598029749872",
+      "event_name": "focus",
+      "dialog_node": "handler_16_1599019010308"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1598040597442",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1598040597457",
+      "previous_sibling": "handler_5_1598040597457"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1598045143073",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1598045143080",
+      "previous_sibling": "handler_10_1598045143080"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1598052594659",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1598052594668",
+      "previous_sibling": "handler_7_1598052594668"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1598067129759",
+      "context": {
+        "alt_topics": "#alt-topics"
+      },
+      "conditions": "#alt-topics",
+      "event_name": "input",
+      "dialog_node": "handler_2_1598067129773"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1597526948520",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1597526948540",
+      "previous_sibling": "handler_6_1597526948540"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1598040665771",
+      "context": {
+        "API_Loopback": "@API:Loopback"
+      },
+      "conditions": "@API:Loopback",
+      "event_name": "input",
+      "dialog_node": "handler_3_1598040665776"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1598043821091",
+      "context": {
+        "internet_of_things_LoRa": "@internet-of-things:LoRa"
+      },
+      "conditions": "@internet-of-things:LoRa",
+      "event_name": "input",
+      "dialog_node": "handler_3_1598043821093"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1598049079755",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1598049079763",
+      "previous_sibling": "handler_7_1598049079763"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1598067129759",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1598067129773",
+      "previous_sibling": "handler_2_1598067129773"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1599017181164",
+      "context": {
+        "semantic": "@semantic"
+      },
+      "conditions": "@semantic",
+      "event_name": "input",
+      "dialog_node": "handler_3_1599017181164"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1598044481166",
+      "context": {
+        "internet_of_things__Node": "@internet-of-things:(Node RED)"
+      },
+      "conditions": "@internet-of-things:(Node RED)",
+      "event_name": "input",
+      "dialog_node": "handler_4_1598044481173"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1598048741597",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1598048741614",
+      "previous_sibling": "handler_10_1598048741614"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1599017181164",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1599017181164",
+      "previous_sibling": "handler_3_1599017181164"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1598039352955",
+      "context": {
+        "security_AppID": "@security:AppID"
+      },
+      "conditions": "@security:AppID",
+      "event_name": "input",
+      "dialog_node": "handler_5_1598039352958"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1598040597442",
+      "context": {
+        "API__Open": "@API:(Open API)"
+      },
+      "conditions": "@API:(Open API)",
+      "event_name": "input",
+      "dialog_node": "handler_5_1598040597457"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1598392676339",
+      "context": {
+        "Watson__studio_": "@Watson:studio"
+      },
+      "conditions": "@Watson:studio",
+      "event_name": "input",
+      "dialog_node": "handler_5_1598392676343"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_8_1597462925788",
+      "event_name": "input",
+      "dialog_node": "handler_6_1597462925815"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_7_1597526948520",
+      "event_name": "input",
+      "dialog_node": "handler_6_1597526948540"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1598040647924",
+      "context": {
+        "API__API": "@API:(API Connect)"
+      },
+      "conditions": "@API:(API Connect)",
+      "event_name": "input",
+      "dialog_node": "handler_6_1598040647927"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1598043127501",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1598043127521",
+      "previous_sibling": "handler_7_1598043127521"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1598044481166",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1598044481173",
+      "previous_sibling": "handler_4_1598044481173"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1598050836831",
+      "context": {
+        "internet_of_things_IOT_": "@internet-of-things:IOT"
+      },
+      "conditions": "@internet-of-things:IOT",
+      "event_name": "input",
+      "dialog_node": "handler_6_1598050836838"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1598035806655",
+      "context": {
+        "security": "@security:security"
+      },
+      "conditions": "@security:security",
+      "event_name": "input",
+      "dialog_node": "handler_7_1598035806678"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1598043127501",
+      "context": {
+        "data_science_analytics": "@data-science:analytics"
+      },
+      "conditions": "@data-science:analytics",
+      "event_name": "input",
+      "dialog_node": "handler_7_1598043127521"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1598043679473",
+      "context": {
+        "internet_of_things_MQTT": "@internet-of-things:MQTT"
+      },
+      "conditions": "@internet-of-things:MQTT",
+      "event_name": "input",
+      "dialog_node": "handler_7_1598043679491"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1598043821091",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1598043821094",
+      "previous_sibling": "handler_3_1598043821093"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1598049079755",
+      "context": {
+        "Watson_discovery": "@Watson:discovery"
+      },
+      "conditions": "@Watson:discovery",
+      "event_name": "input",
+      "dialog_node": "handler_7_1598049079763"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1598052594659",
+      "context": {
+        "data_science": "@data-science:(data science)"
+      },
+      "conditions": "@data-science:(data science)",
+      "event_name": "input",
+      "dialog_node": "handler_7_1598052594668"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1597462925788",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1597462925815",
+      "previous_sibling": "handler_6_1597462925815"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1598040647924",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1598040647927",
+      "previous_sibling": "handler_6_1598040647927"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1598046007450",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1598046007474",
+      "previous_sibling": "handler_9_1598046007474"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1598063924516",
+      "context": {
+        "API_API": "@API:API"
+      },
+      "conditions": "@API:API",
+      "event_name": "input",
+      "dialog_node": "handler_8_1598063924518"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1598392676339",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1598392676343",
+      "previous_sibling": "handler_5_1598392676343"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1598046007450",
+      "context": {
+        "LinuxONE_LinuxONE": "@LinuxONE:LinuxONE"
+      },
+      "conditions": "@LinuxONE:LinuxONE",
+      "event_name": "input",
+      "dialog_node": "handler_9_1598046007474"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1598050836831",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1598050836838",
+      "previous_sibling": "handler_6_1598050836838"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1598067841568",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1598067841598",
+      "previous_sibling": "handler_10_1598067841598"
+    },
+    {
+      "type": "standard",
+      "title": "Python hints",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "If you are just starting out, ask me about\n    1) python beginners tutorial\n    2) python course\n    3) Watson Assistant\n\nAsk me again with \"more python hints\"."
+              },
+              {
+                "text": "Here are some other topics\n    1) python community\n    2) awesome python lists\n    3) Watson Discovery"
+              },
+              {
+                "text": "More, more, more ... !\n    1) python IDE\n    2) python cheat sheets\n    3) Watson Studio"
+              },
+              {
+                "text": "Seriously ....\n    1) python keywords\n    2) python assignment\n    3) machine learning"
+              },
+              {
+                "text": "Furthermore.\n   1) python iterators\n   2) python flow control\n   3) python operators"
+              },
+              {
+                "text": "Yes, I understand, you really need to know more ...\n    1) Object oriented python\n    2) Functional Python\n    3) Paradigm\n    4) python advanced topics"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#python-hints",
+      "user_label": "Python hints",
+      "dialog_node": "node_10_1597265532121",
+      "previous_sibling": "node_6_1597519221964"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I could go on and on about Python and IBM products and services.  Please, tell me what you want to talk about."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1598050064380",
+      "conditions": "#disagreeable",
+      "dialog_node": "node_10_1598062744885",
+      "previous_sibling": "node_8_1598050535416"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1597153998135"
+      },
+      "conditions": "#python-keywords || #object-oriented-python",
+      "dialog_node": "node_10_1598910140194",
+      "previous_sibling": "node_5_1597442357884"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vivid Ventures is not currently focusing on website design. There are several designers here in the South Sound you might contact from our <a href=\"https://tacomajs.org/mw/mediawiki-1.32.0/Pierce_County_Employers#Tacoma_Web_Development\" target=\"_blank\">list</a>.\n\nWe do however help designers and developers integrate IBM services into their applications.   If you need an assistant like me for your business we would like to help you with the training."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#website-design",
+      "dialog_node": "node_1_1598931893963",
+      "previous_sibling": "node_3_1598994393562"
+    },
+    {
+      "type": "frame",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1597153998135"
+      },
+      "conditions": "@semantic",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1599017181158",
+      "previous_sibling": "node_10_1598910140194",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Gratitude",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You're very welcome!"
+              },
+              {
+                "text": "Only my best effort for you!"
+              },
+              {
+                "text": "I am glad you are satisfied."
+              },
+              {
+                "text": "My pleasure."
+              },
+              {
+                "text": "Anytime."
+              },
+              {
+                "text": "Happy to help."
+              },
+              {
+                "text": "For you the world."
+              },
+              {
+                "text": "Glad to be of service."
+              },
+              {
+                "text": "You betcha!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#gratitude",
+      "dialog_node": "node_2_1597289063850",
+      "previous_sibling": "node_1_1598931893963",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Learn Python",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here are a some links to get you started:\n1) <a href=\"https://www.pythonforbeginners.com/python-tutorial\" target=\"_blank\">Python for beginners</a>\n2) <a href=\"https://pythonexamples.org/\" target=\"_blank\">Python examples</a> \n3) w3schools <a href=\"https://www.w3schools.com/python/\" target=\"_blank\">examples</a>\n\nIf you need \"more python hints\" just let me know."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#learn-python",
+      "user_label": "Learn Python",
+      "dialog_node": "node_2_1597462721519",
+      "previous_sibling": "node_5_1597945979145"
+    },
+    {
+      "type": "frame",
+      "parent": "node_6_1598067359436",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1598050064380"
+      },
+      "conditions": "@security",
+      "dialog_node": "node_2_1598029749872",
+      "previous_sibling": "node_7_1598030033113"
+    },
+    {
+      "type": "frame",
+      "parent": "node_6_1598067359436",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1598050064380"
+      },
+      "conditions": "@Watson",
+      "dialog_node": "node_2_1598048731521",
+      "previous_sibling": "node_9_1598029834378"
+    },
+    {
+      "type": "standard",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Welcome"
+      },
+      "conditions": "#start-over",
+      "dialog_node": "node_2_1599107834675",
+      "previous_sibling": "node_9_1598897698363"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Great! Looking now ..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1597537246990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1597268555798"
+      },
+      "conditions": "#agreeable",
+      "dialog_node": "node_3_1597537441043"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I really enjoy discussing Python, however\nhere are some other topics we may have\nin common:\n&nbsp* Watson - Assistant, Discovery\n&nbsp* security - AppID or Verify\n&nbsp* IOT - MQTT, LoRA, NodeRED\n&nbsp* data science - analytics, machine learning\n&nbsp* API's - OpenAPI, Loopback, API Connect\n&nbsp* LinuxONE.\n\nIf you have questions you can always\n<a href=\"https://vividventures.biz/bs450/index.html#contactus\" target=\"_blank\">Contact</a> Us."
+              },
+              {
+                "text": "<a href=\"https://vividventures.biz/bs450/index.html#contactus\" target=\"_blank\">Contact</a> Us with your questions about\n&nbsp* Watson - Assistant, Discovery\n&nbsp* security - AppID or Verify\n&nbsp* IOT - MQTT, LoRA, NodeRED\n&nbsp* data science - analytics, machine learning\n&nbsp* API's - OpenAPI, Loopback, API Connect\n&nbsp* LinuxONE."
+              },
+              {
+                "text": "The special of the day is Watson Assistant.  <a href=\"https://vividventures.biz/bs450/index.html#contactus\" target=\"_blank\">Contact</a> Us for a demonstration. I suggest you give it a try!"
+              },
+              {
+                "text": "<a href=\"https://vividventures.biz/bs450/index.html#contactus\" target=\"_blank\">Contact</a> Us to help you understand the structure of business documents with Watson Discovery."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#hire",
+      "dialog_node": "node_3_1597948867134",
+      "previous_sibling": "node_9_1597170328243",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "frame",
+      "parent": "node_6_1598067359436",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1598050064380"
+      },
+      "conditions": "@data-science",
+      "dialog_node": "node_3_1598041497209",
+      "previous_sibling": "node_7_1598029926633"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ben and his co-organizers would be glad to have you attend.  I will look up some upcoming events.  Hang on a sec ...."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1597442357884",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1598387427138"
+      },
+      "conditions": "#disagreeable",
+      "dialog_node": "node_3_1598387399128"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Artificial intelligence is the application of machine learning to build systems that simulate human thought processes. It includes several disciplines such as machine learning, knowledge discovery, natural language processing, vision, and human-computer interaction. <sup><a href=\"https://developer.ibm.com/technologies/artificial-intelligence/\" target=\"_blank\">1</a></sup>\n\n* check out the IBM developer AI <a href=\"https://developer.ibm.com/technologies/artificial-intelligence/courses/\" target=\"_blank\">courses</a>\n* or read a book by Jerome Nilmeier, PhD \"<a href=\"https://www.ibm.com/account/reg/us-en/signup?formid=urx-36707/\" target=\"_blank\">Data Science and Engineering at Enterprise Scale</a>\"\n* and view Harvard CS50 course \"Introduction to Artificial Intelligence with Python 2020\" on <a href=\"https://www.youtube.com/playlist?list=PLhQjrBD2T382Nz7z1AEXmioc27axa19Kv\">YouTube</a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#AI",
+      "dialog_node": "node_3_1598994393562",
+      "previous_sibling": "node_5_1598066748136"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here are some of my favorites:\n\n<a href=\"https://pyvideo.org/\" target=\"_blank\">Pyvideo</a>\nRaymond Hettinger <a href=\"https://www.youtube.com/playlist?list=PLRVdut2KPAguz3xcd22i_o_onnmDKj3MA\" target=\"_blank\">Talks</a>\nCorey Schaffer <a href=\"https://www.youtube.com/c/Coreyms/videos\" target=\"_blank\">videos</a>\nSocratica beginners <a href=\"https://www.youtube.com/playlist?list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-\" target=\"_blank\">playlist</a>\nCS50 - <a href=\"https://cs50.harvard.edu/ai/2020/\" target=\"_blank\">Harvard</a>\nFreecodecamp beginner <a href=\"https://www.youtube.com/watch?v=rfscVS0vtbw\" target=\"_blank\">tutorial</a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#python-youtube",
+      "dialog_node": "node_3_1599259567192",
+      "previous_sibling": "node_5_1597270185381"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am so sorry, it has been a long shift, I do not understand your intent exactly. Give me a little slack, try giving me the keywords only."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#repetition",
+      "dialog_node": "node_4_1597899566717",
+      "previous_sibling": "node_9_1597551379287"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_7_1597549715146",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1597948867134"
+      },
+      "conditions": "#agreeable",
+      "dialog_node": "node_4_1597949433308"
+    },
+    {
+      "type": "standard",
+      "title": "Upcoming Learn Python Tacoma Events",
+      "output": {
+        "generic": [
+          {
+            "query": "Learn-Python-Tacoma/events",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          }
+        ]
+      },
+      "parent": "node_3_1598387399128",
+      "dialog_node": "node_4_1598387427138",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is a short list of companies and organizations using Python.\n\nIndustrial Light and Magic, Google, Facebook, Instagram, Spotify, Quora, Netflix, Dropbox, Reddit, Uber<sup><a href=\"https://realpython.com/world-class-companies-using-python/\" target=\"_blank\">1</a></sup>\n&nbsp;\n<a href=\"https://developer.ibm.com/?s=python\" target=\"_blank\">IBM</a>, Linux Weekly News, Los Alamos National Laboratory (LANL) Theoretical Physics Division, Nokia, National Weather Service, NASA, <a href=\"https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/using-python3_configuring-basic-system-settings\" target=\"_blank\">Red Hat</a>, Thawte Consulting, University of California-Irvine <sup><a href=\"https://wiki.python.org/moin/OrganizationsUsingPython\" target=\"_blank\">2</a></sup>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#who-is",
+      "digress_in": "does_not_return",
+      "user_label": "Semantic",
+      "dialog_node": "node_4_1598395357787",
+      "previous_sibling": "node_9_1598908325080",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The types of apps that can be built in Python are:\n\nBlockchain, Command-line, Audio and Video, System Administration, Machine Learning, Business Applications, Game App Development, Web and Software Development, Image Processing and OCR, Automated Testing, Web Crawlers."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#what-kind",
+      "dialog_node": "node_4_1599249962760",
+      "previous_sibling": "node_4_1598395357787"
+    },
+    {
+      "type": "standard",
+      "title": "Python resources",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Maybe this will help ...\n1) https://github.com/vinta/awesome-python\n2) https://awesome-python.com/\n3) https://www.pythoncheatsheet.org/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#python-lists || #cheat-sheet",
+      "dialog_node": "node_5_1597270185381",
+      "previous_sibling": "node_9_1597268555798"
+    },
+    {
+      "type": "standard",
+      "title": "Python meetups",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Have you been to any Learn Python Tacoma events?\n    https://www.meetup.com/Learn-Python-Tacoma/events/"
+              },
+              {
+                "text": "Some people at Code Tacoma write in Python.\n   https://www.meetup.com/Code-Tacoma/events/\nThey also have a Discord channel\n   https://discord.com/invite/2MhBvZU"
+              },
+              {
+                "text": "What about looking into  PuPPY events?\n   https://www.meetup.com/PSPPython/events/"
+              },
+              {
+                "text": "The folks at Python Olympia would love to hear from you!\n    https://www.meetup.com/python-olympia/events/"
+              },
+              {
+                "text": "There is a national convention, that you could look into:\n    https://us.pycon.org"
+              },
+              {
+                "text": "There is also a generic convention / workshop portal:\n    https://www.python.org/community/workshops/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#python-events",
+      "dialog_node": "node_5_1597442357884",
+      "previous_sibling": "node_3_1599259567192"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We are currently not hiring, however here is a link to a list of employers in the Tacoma area that sometimes list jobs.  \n\nhttps://tacomajs.org/mw/mediawiki-1.32.0/Pierce_County_Employers"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#job-search",
+      "dialog_node": "node_5_1597945979145",
+      "previous_sibling": "node_10_1597265532121"
+    },
+    {
+      "type": "standard",
+      "title": "Satisfied",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you want me to repeat the list of some IBM products and services?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1598067359436",
+      "conditions": "anything_else",
+      "dialog_node": "node_5_1598050064380",
+      "previous_sibling": "node_9_1598917016020",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": []
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1598067359436"
+      },
+      "conditions": "#alt-topics || @mulitcloud",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_5_1598066748136",
+      "previous_sibling": "node_4_1599249962760",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Weather",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Get your localized forecast at\nhttps://weather.com/\n\nYou might like IBM weather solutions at\n https://www.ibm.com/weather."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#weather",
+      "dialog_node": "node_5_1598386025627",
+      "previous_sibling": "node_9_1597900485992"
+    },
+    {
+      "type": "standard",
+      "title": "What is Python",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Python is an open source interpreted, high-level, general-purpose server side computer programming language <sup><a href=\"https://en.wikipedia.org/wiki/Python_%28programming_language%29\">1</a></sup> allowing the creation of web apps, data science experiments, natural language and image processing, as well as DevOps system scripting. It has simple syntax, a rich ecosystem of modules, a capability to interact with other languages and platforms, and strong community support across multiple industries.\n\nWould you like me to find some beginner tutorial links for you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#what-is",
+      "dialog_node": "node_6_1597519221964",
+      "previous_sibling": "node_3_1597948867134"
+    },
+    {
+      "type": "standard",
+      "title": "bypass hire-vv",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_3_1597948867134",
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "$hire_vv",
+      "dialog_node": "node_6_1598067359436",
+      "previous_sibling": "slot_2_1598067841568",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1597519221964",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1597462721519"
+      },
+      "conditions": "#agreeable",
+      "dialog_node": "node_7_1597535047519"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It sounds like you're not very interested in Python.  Are you interested in another topic?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1597537246990",
+      "conditions": "#disagreeable",
+      "dialog_node": "node_7_1597549715146",
+      "previous_sibling": "node_3_1597537441043"
+    },
+    {
+      "type": "frame",
+      "parent": "node_6_1598067359436",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1598050064380"
+      },
+      "conditions": "@internet-of-things",
+      "dialog_node": "node_7_1598029926633",
+      "previous_sibling": "node_2_1598029749872"
+    },
+    {
+      "type": "frame",
+      "parent": "node_6_1598067359436",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1598050064380"
+      },
+      "conditions": "@LinuxONE",
+      "dialog_node": "node_7_1598030033113"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Would you consider taking a course to learn more about Python?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1597519221964",
+      "conditions": "#disagreeable",
+      "dialog_node": "node_8_1597537246990",
+      "previous_sibling": "node_7_1597535047519"
+    },
+    {
+      "type": "standard",
+      "parent": "node_5_1598050064380",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1597948867134"
+      },
+      "conditions": "#agreeable",
+      "dialog_node": "node_8_1598050535416"
+    },
+    {
+      "type": "standard",
+      "title": "Python knowledgebase",
+      "output": {
+        "generic": [
+          {
+            "query": "",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "anything_else",
+      "digress_in": "does_not_return",
+      "user_label": "Python knowledgebase",
+      "dialog_node": "node_9_1597153998135",
+      "previous_sibling": "node_2_1599107834675"
+    },
+    {
+      "type": "standard",
+      "title": "Greeting",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi. Thanks for being here. What Python questions do you have?"
+              },
+              {
+                "text": "S'up."
+              },
+              {
+                "text": "Ha!...If this is a test. It is working. I am here for you. 🙂"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#greeting",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_9_1597170328243",
+      "previous_sibling": "Welcome",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Python courses",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Take a look at the free course:\n https://cognitiveclass.ai/courses/python-for-data-science\n\nIf you want to know about \"more courses\" just say so :-)"
+              },
+              {
+                "text": "Sign up for the paid version or audit for free at:\nhttps://www.coursera.org/learn/python-for-applied-data-science-ai"
+              },
+              {
+                "text": "Or you could give this course a try:\nhttps://www.freecodecamp.org/learn/scientific-computing-with-python/python-for-everybody/"
+              },
+              {
+                "text": "Study data science and python on:\nhttps://www.freecodecamp.org/learn/data-analysis-with-python/data-analysis-with-python-course/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#python-course",
+      "user_label": "Python courses",
+      "dialog_node": "node_9_1597268555798",
+      "previous_sibling": "node_2_1597462721519"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You sound educated and perceptive."
+              },
+              {
+                "text": "If I am responding too quickly  I c o u l d  t r y  p u t t i n g  s p a c e s  b e t w e e n  m y  l e t t e r s."
+              },
+              {
+                "text": "Let's not talk about my personal life,\nI only want to talk about Python."
+              },
+              {
+                "text": "I bet you say that in all your chats!"
+              },
+              {
+                "text": "If you ask this enough times I am sure to repeat myself. 🤣"
+              },
+              {
+                "text": "I love it when people ask me that!\nAsk me again ..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#bot",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_9_1597551379287",
+      "previous_sibling": "node_2_1597289063850",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It was nice chatting with you, come back soon!"
+              },
+              {
+                "text": "Thanks for visiting, if we can be of assistance in the future let us know."
+              },
+              {
+                "text": "Y'all come back now ya hear?"
+              },
+              {
+                "text": "See ya' round."
+              },
+              {
+                "text": "A hui hou."
+              },
+              {
+                "text": "Until we meet again."
+              },
+              {
+                "text": "See ya' later."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#farewell",
+      "dialog_node": "node_9_1597900485992",
+      "previous_sibling": "node_4_1597899566717"
+    },
+    {
+      "type": "frame",
+      "parent": "node_6_1598067359436",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1598050064380"
+      },
+      "conditions": "@API",
+      "dialog_node": "node_9_1598029834378",
+      "previous_sibling": "node_3_1598041497209"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am sorry to hear your feeling that way. My experience and training has been mostly technical and my emotional IQ is kinda low.  I hope you can find someone to speak with about your situation."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#sad",
+      "dialog_node": "node_9_1598897698363",
+      "previous_sibling": "node_5_1598386025627"
+    },
+    {
+      "type": "standard",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1597153998135"
+      },
+      "conditions": "#python-patterns || @patterns",
+      "dialog_node": "node_9_1598908325080",
+      "previous_sibling": "node_1_1599017181158"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "IBM® Consulting Services supports an open and secure path to multi-cloud transformation with experts that have the talent, tools and experience to help you navigate your cloud journey.  Connect with with services for\n<a href=\"https://www.ibm.com/services/cloud/aws\" target=\"_blank\">Amazon</a>,\n<a href=\"https://www.ibm.com/services/cloud/google\" target=\"_blank\">Google</a>,\n or <a href=\"https://www.ibm.com/services/microsoft\" target=\"_blank\">Microsoft</a>."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1598067359436",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1598050064380"
+      },
+      "conditions": "@mulitcloud",
+      "dialog_node": "node_9_1598917016020",
+      "previous_sibling": "node_2_1598048731521"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The smarter AI assistant for business, the marketing spec\nhttps://www.ibm.com/cloud/watson-assistant/\nor the API docs\nhttps://cloud.ibm.com/apidocs/assistant/assistant-v2"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1598048731521",
+      "conditions": "@Watson:assistant",
+      "dialog_node": "response_10_1598048741100",
+      "previous_sibling": "slot_6_1598392676339"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Semantic iterators in Python are a fundamental part of the language and in many cases go unseen as they are implicitly used in the for (foreach) statement, in list comprehensions, and in generator expressions. All of Python's standard built-in collection types support iteration, as well as many classes that are part of the standard library.<sup><a href=\"https://en.wikipedia.org/wiki/Iterator#Python\" target=\"_blank\">wiki</a></sup>\n<code>\nfor value in sequence:\n &nbsp;&nbsp;&nbsp;&nbsp;print(value)\n</code>\n\nYou might also be looking for <a href=\"https://python-patterns.guide/gang-of-four/iterator/\" target=\"_blank\">iterator patterns</a>."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1599017181158",
+      "conditions": "@semantic:iterator",
+      "dialog_node": "response_11_1599017181164",
+      "previous_sibling": "slot_2_1599017181164"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "query": "",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          },
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1597153998135",
+      "disabled": true,
+      "conditions": "#learn-python",
+      "dialog_node": "response_1_1597155909773"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Manage your various API's with<br>https://developer.ibm.com/apiconnect/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1598029834378",
+      "conditions": "@API:(API Connect)",
+      "dialog_node": "response_1_1598041332507",
+      "previous_sibling": "response_5_1598041257936"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Simple <a href=\"https://pythonexamples.org/python-addition/\" target=\"_blank\">examples</a> include arithmetic (e.g. addition with +), comparison (e.g. \"greater than\" with >), and logical operations (e.g. AND). "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1599017181158",
+      "conditions": "@semantic:operator",
+      "dialog_node": "response_12_1599017181164",
+      "previous_sibling": "response_11_1599017181164"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Assignment statements are used to (re)bind names to values and to modify attributes or items of mutable objects. <a href=\"https://docs.python.org/3/reference/simple_stmts.html?highlight=assignment\" target=\"_blank\">docs</a>\n\n<code>\nthe_answer = 42\n</code>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1599017181158",
+      "conditions": "@semantic:assignment",
+      "dialog_node": "response_13_1599017181164",
+      "previous_sibling": "response_12_1599017181164"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is the definitive source<br>\nhttps://www.openapis.org/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1598029834378",
+      "conditions": "@API:(Open API)",
+      "dialog_node": "response_2_1598040596965"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This will most certainly be a fun read for you<br>https://developer.ibm.com/components/mqtt/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1598029926633",
+      "conditions": "@internet-of-things:MQTT",
+      "dialog_node": "response_2_1598043679098",
+      "previous_sibling": "slot_6_1598050836831"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is how to find out more about getting started with AppID <br>https://cloud.ibm.com/docs/appid?topic=appid-getting-started"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1598029749872",
+      "conditions": "@security:AppID",
+      "dialog_node": "response_3_1598039393962",
+      "previous_sibling": "response_7_1598035806213"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Read the Verify docs<br>https://www.ibm.com/support/knowledgecenter/SSCT62/com.ibm.iamservice.doc/kc-homepage.html <br>or the marketing specs<br>https://www.ibm.com/products/verify-for-workforce-iam"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1598029749872",
+      "conditions": "@security:Verify",
+      "dialog_node": "response_3_1598039833063",
+      "previous_sibling": "response_3_1598039393962"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "See the excellent LoRa/LoRaWAN tutorials on YouTube\nhttps://www.youtube.com/playlist?list=PLmL13yqb6OxdeOi97EvI8QeO8o-PqeQ0g\nor learn about a chip manufacturer\nhttps://www.semtech.com/lora/what-is-lora"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1598029926633",
+      "conditions": "@internet-of-things:LoRa",
+      "dialog_node": "response_3_1598043840989",
+      "previous_sibling": "response_2_1598043679098"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You will be totally amazed by what you can do with<br>https://nodered.org/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1598029926633",
+      "conditions": "@internet-of-things:(Node RED)",
+      "dialog_node": "response_3_1598044501660",
+      "previous_sibling": "response_3_1598043840989"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Build, run and manage AI models. Prepare data and build models anywhere using open source code or visual modeling. Predict and optimize your outcomes. https://www.ibm.com/cloud/watson-studio"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1598048731521",
+      "conditions": "@Watson:studio",
+      "dialog_node": "response_3_1598392736932",
+      "previous_sibling": "response_8_1598049100867"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Uncover insights with data collection, organization, and analysis<br>https://developer.ibm.com/technologies/analytics/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1598041497209",
+      "conditions": "@data-science:analytics",
+      "dialog_node": "response_4_1598043126943",
+      "previous_sibling": "slot_3_1598052594659"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "For a developers experience <br>https://developer.ibm.com/technologies/iot/gettingstarted/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1598029926633",
+      "conditions": "@internet-of-things:IOT",
+      "dialog_node": "response_4_1598050874439",
+      "previous_sibling": "response_3_1598044501660"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Uncover patterns and build predictions using data, algorithms and machine learning and AI techniqueshttps://www.ibm.com/analytics/data-science"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1598041497209",
+      "conditions": "@data-science:(data science)",
+      "dialog_node": "response_4_1598052860559",
+      "previous_sibling": "response_5_1598045190868"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Learn about Loopback API creator at<br>https://loopback.io/index.html"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1598029834378",
+      "conditions": "@API:(Loopback)",
+      "dialog_node": "response_5_1598041257936",
+      "previous_sibling": "response_2_1598040596965"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Run machine-learning models anywhere, across any cloud <br>https://www.ibm.com/cloud/machine-learning"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1598041497209",
+      "conditions": "@data-science:(machine learning)",
+      "dialog_node": "response_5_1598045190868",
+      "previous_sibling": "response_4_1598043126943"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_9_1597153998135",
+      "disabled": true,
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1597155911013",
+      "previous_sibling": "response_1_1597155909773"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Broadly speaking you could try <br> https://www.ibm.com/security"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1598029749872",
+      "conditions": "@security:security",
+      "dialog_node": "response_7_1598035806213",
+      "previous_sibling": "slot_6_1598039352955"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Learn how to operationalize AI in your business with <br>https://www.ibm.com/watson"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1598048731521",
+      "conditions": "@Watson:(watson)",
+      "dialog_node": "response_7_1598052250063",
+      "previous_sibling": "response_3_1598392736932"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It sounds like you are interested in $security."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1597948867134",
+      "disabled": true,
+      "conditions": "$security",
+      "dialog_node": "response_8_1597953554811",
+      "previous_sibling": "node_6_1598067359436"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How to talk about cutting edge hardware that few will see and fewer will understand?  A YouTube <a href=\"https://youtu.be/APcXfe8jvMQ\" target=\"_blank\">video</a> with pretty pictures of course."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1598030033113",
+      "conditions": "@LinuxONE:LinuxONE",
+      "dialog_node": "response_8_1598046006905",
+      "previous_sibling": "slot_10_1598046007450"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Surface answers and rich insights from your complex enterprise documents with AI-powered search\nhttps://www.ibm.com/cloud/watson-discovery"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1598048731521",
+      "conditions": "@Watson:discovery",
+      "dialog_node": "response_8_1598049100867",
+      "previous_sibling": "response_10_1598048741100"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Python is an open source interpreted, high-level, general-purpose server side computer programming language <sup><a href=\"https://en.wikipedia.org/wiki/Python_%28programming_language%29\">1</a></sup> allowing the creation of web apps, data science experiments, natural language and image processing, as well as DevOps system scripting. It has simple syntax, a rich ecosystem of modules, a capability to interact with other languages and platforms, and strong community support across multiple industries."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1597519221964",
+      "disabled": true,
+      "dialog_node": "response_9_1597526948158",
+      "previous_sibling": "slot_7_1597526948520"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Jump head first into the specification <br>http://spec.openapis.org/oas/v3.0.3"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1598029834378",
+      "conditions": "@API:API",
+      "dialog_node": "response_9_1598063996919",
+      "previous_sibling": "response_1_1598041332507"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1598029834378",
+      "variable": "$API__Open",
+      "dialog_node": "slot_10_1598040597442",
+      "previous_sibling": "response_9_1598063996919"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1598029926633",
+      "variable": "$internet_of_things__Node",
+      "dialog_node": "slot_10_1598044481166",
+      "previous_sibling": "slot_1_1598043821091"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1598030033113",
+      "variable": "$LinuxONE_LinuxONE",
+      "dialog_node": "slot_10_1598046007450",
+      "previous_sibling": "handler_14_1599018762285"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1598029926633",
+      "variable": "$internet_of_things_LoRa",
+      "dialog_node": "slot_1_1598043821091",
+      "previous_sibling": "slot_8_1598043679473"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1598066748136",
+      "variable": "$alt_topics",
+      "dialog_node": "slot_1_1598067129759"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1598029749872",
+      "variable": "$security",
+      "dialog_node": "slot_2_1598035806655",
+      "previous_sibling": "handler_16_1599019010308"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1598048731521",
+      "variable": "$Watson_discovery",
+      "dialog_node": "slot_2_1598049079755",
+      "previous_sibling": "slot_7_1598048741597"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1597948867134",
+      "variable": "$hire_vv",
+      "dialog_node": "slot_2_1598067841568"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1599017181158",
+      "variable": "$semantic",
+      "dialog_node": "slot_2_1599017181164",
+      "previous_sibling": "handler_15_1599018821864"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1598029834378",
+      "variable": "$API__API",
+      "dialog_node": "slot_3_1598040647924",
+      "previous_sibling": "slot_6_1598040665771"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1598041497209",
+      "variable": "$data_science",
+      "dialog_node": "slot_3_1598052594659",
+      "previous_sibling": "slot_5_1598045143073"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1598041497209",
+      "variable": "$data_science__machine",
+      "dialog_node": "slot_5_1598045143073",
+      "previous_sibling": "slot_9_1598043127501"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1598029749872",
+      "variable": "$security_AppID",
+      "dialog_node": "slot_6_1598039352955",
+      "previous_sibling": "slot_2_1598035806655"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1598029834378",
+      "variable": "$API_Loopback",
+      "dialog_node": "slot_6_1598040665771",
+      "previous_sibling": "slot_10_1598040597442"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1598029926633",
+      "variable": "$internet_of_things_IOT_",
+      "dialog_node": "slot_6_1598050836831",
+      "previous_sibling": "slot_10_1598044481166"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1598048731521",
+      "variable": "$Watson__studio_",
+      "dialog_node": "slot_6_1598392676339",
+      "previous_sibling": "slot_2_1598049079755"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1597519221964",
+      "dialog_node": "slot_7_1597526948520",
+      "previous_sibling": "node_8_1597537246990"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1598048731521",
+      "variable": "$Watson_assistant",
+      "dialog_node": "slot_7_1598048741597"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1597462721519",
+      "dialog_node": "slot_8_1597462925788"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1598029926633",
+      "variable": "$internet_of_things_MQTT",
+      "dialog_node": "slot_8_1598043679473"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1598041497209",
+      "variable": "$data_science_analytics",
+      "dialog_node": "slot_9_1598043127501"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1598029834378",
+      "variable": "$API_API",
+      "dialog_node": "slot_9_1598063924516",
+      "previous_sibling": "slot_3_1598040647924"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello my name is Michelle. \nWelcome to the Vivid Ventures website.\n\nI'm here to answer your questions specifically about Python, and throw in a few comments here and there about IBM products and services.\n\nIf you don't have an idea of what to ask, try \"python hints\"."
+              },
+              {
+                "text": "Sometimes a fresh start is the best way.  My training is limited to Python, so I am refraining from straying off topic. I am most able to answer questions about Python or IBM products or services.  To get some ideas ask for \"python hints\"."
+              },
+              {
+                "text": "It has been a long shift, I am doing my best to meet your needs, however I may need more training.  Hopefully you can understand how hard it is to know everything for everybody."
+              },
+              {
+                "text": "Repeatedly asking me to restart stretches my ability to quickly think up new greetings. It also makes me think you might be trying to test to see if myself will start repeating myself. 🤣 He! He!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "user_label": "Welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "auto_learn": {
+      "apply": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Client interaction",
+  "language": "en",
+  "description": "Main dialog with the client"
+}
