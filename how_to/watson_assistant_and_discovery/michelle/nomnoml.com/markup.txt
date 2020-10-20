@@ -1,0 +1,23 @@
+#Title: Assistant training
+#padding: 10
+#fontSize: 24
+#spacing: 70
+
+[<actor>Michelle]->[Dialog Skill]
+[<actor>Michelle]->[Discovery skill]
+
+[Discovery skill|Webcrawl|doc_1|...|doc_n]
+
+[Dialog Skill]<->[<actor>Beginner]
+[Dialog Skill]<->[<actor>CIO]
+[Dialog Skill]<->[<actor>New Grad]
+[Dialog Skill]<->[<actor>Advanced developer]
+
+[Dialog Skill|Nodes]->[Nodes| Intents | Entities]
+[Intents def]<-[Nodes]
+[Entities def]<-[Nodes]
+
+[Beginner]->[Beginner Intent| learn]
+[CIO]->[CIO Intent| overview]
+[New Grad]->[Grad Intent| find work]
+[Advanced developer]->[Developer Intent| advanced query]
