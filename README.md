@@ -50,11 +50,7 @@ Reference [:link:](https://community.ibm.com/community/user/gettingstarted/netiq
 
 ----
 
-:mag_right:
-
-----
-
-Other resources:
+Other resources: :mag_right:
 
 ----
 
@@ -76,11 +72,7 @@ Other resources:
 
 ----
 
-:woman_surfing:
-
-----
-
-## [Follow](https://github.com/IBM-Developer-Puget-Sound/curtain-raiser/README.md#Follow)
+## [Follow](https://github.com/IBM-Developer-Puget-Sound/curtain-raiser/README.md#Follow) :surfer:
 
 ----
 
