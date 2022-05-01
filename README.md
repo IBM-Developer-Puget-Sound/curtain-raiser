@@ -6,8 +6,6 @@ README first to get a progressive overview
 
 ## Getting started :running:
 
-----
-
 1. Follow the create an IBM Cloud account
    [instructions](./how_to/create_ibm_account/NEWACCOUNT.md).
 
@@ -34,8 +32,6 @@ Please connect directly with the following links.
 
 ## Community Netiquette :straight_ruler:
 
-----
-
 Reference [:link:](https://community.ibm.com/community/user/gettingstarted/netiquette)
 
 * Do not use this community server or community for self-promotion or commercial advertising.
@@ -50,9 +46,7 @@ Reference [:link:](https://community.ibm.com/community/user/gettingstarted/netiq
 
 ----
 
-Other resources: :mag_right:
-
-----
+## Other resources: :mag_right:
 
 * IBM [github](https://github.com/IBM)
 
@@ -73,8 +67,6 @@ Other resources: :mag_right:
 ----
 
 ## [Follow](https://github.com/IBM-Developer-Puget-Sound/curtain-raiser/README.md#Follow) :surfer:
-
-----
 
 * Daniel Krook - IBM | SW Eng & Developer Advocate
   * IBM profile [krook](https://developer.ibm.com/profiles/krook/)
