@@ -1,18 +1,19 @@
 # curtain-raiser
+
 README first to get a progressive overview
 
 ----
 
-:man_running:
-- - - - - - - - - - - - - 
-# Getting started
-- - - - - - - - - - - - - 
+## Getting started :running:
 
-1. create an IBM Cloud account [instructions](https://www.youtube.com/watch?v=HBkY-Fs1d6E)
+----
 
-2. register answers [profile](https://developer.ibm.com/sso/register?lang=en_US&d=https%3A%2F%2Fdeveloper.ibm.com%2Fanswers%2F)
+1. Follow the create an IBM Cloud account
+   [instructions](./how_to/create_ibm_account/NEWACCOUNT.md).
 
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+2. With your new ID sign up for [developer.ibm.com](https://developer.ibm.com/auth/?destination=https://developer.ibm.com/)
+
+----
 
 This community is for sharing links during meetups and
 for directing to official IBM reference material and
@@ -25,21 +26,20 @@ Please connect directly with the following links.
 
 * [docs](https://cloud.ibm.com/docs)
 
-* [community support](https://developer.ibm.com/answers/topics/)
+* [community support](https://www.ibm.com/mysupport/s/forumshome)
 
 * [cloud support](https://www.ibm.com/cloud/support)
 
 ----
 
-:straight_ruler:
-- - - - - - - - - - - - - - - - - - -
-## Community Netiquette
-- - - - - - - - - - - - - - - - - - -
+## Community Netiquette :straight_ruler:
+
+----
 
 Reference [:link:](https://community.ibm.com/community/user/gettingstarted/netiquette)
 
 * Do not use this community server or community for self-promotion or commercial advertising.
- 
+
 * Be accepting, constructive and respectful of the opinions expressed by others.
 
 * Do not make personal attacks on other community members, including arguments, bullying, prejudiced remarks and defamatory or false comments.
@@ -51,13 +51,16 @@ Reference [:link:](https://community.ibm.com/community/user/gettingstarted/netiq
 ----
 
 :mag_right:
-- - - - - - - - -
+
+----
+
 Other resources:
-- - - - - - - - -
+
+----
 
 * IBM [github](https://github.com/IBM)
 
-* IBM [community](https://www.ibm.com/community)
+* IBM [community](https://community.ibm.com/community/user/home)
 
 * IBM [code patterns](https://developer.ibm.com/patterns/)
 
@@ -69,18 +72,17 @@ Other resources:
 
 * Youtube [IBM developer](https://www.youtube.com/channel/UCUm6InQvGI9-6vo1teGWINA)
 
-* twitch-tv [IBM developer](https://www.twitch.tv/ibmdeveloper/videos)
-
 * IBM-Developer-Puget-Sound [github](https://github.com/IBM-Developer-Puget-Sound)
-
-* IBM-Developer-Puget-Sound [meetup](https://www.meetup.com/IBM-Developer-Puget-Sound/)
 
 ----
 
 :woman_surfing:
-- - - - -
+
+----
+
 ## [Follow](https://github.com/IBM-Developer-Puget-Sound/curtain-raiser/README.md#Follow)
-- - - - -
+
+----
 
 * Daniel Krook - IBM | SW Eng & Developer Advocate
   * IBM profile [krook](https://developer.ibm.com/profiles/krook/)
@@ -91,7 +93,6 @@ Other resources:
   * twitter [DanielKrook](https://twitter.com/DanielKrook)
 
 * Matt Langbehn - IBM | Open Cloud Innovation
-  * IBM profile [mlangbe](https://developer.ibm.com/profiles/mlangbe/)
   * github [mlangbehn](https://github.com/mlangbehn)
     * [meanDevOps](https://github.com/mlangbehn/meanDevOps)
   * youtube
@@ -100,13 +101,14 @@ Other resources:
   * twitter [realroamingmatt](https://twitter.com/realroamingmatt)
 
 * Upkar Lidder - IBM | Full stack spring and nodejs
+  * linkedin [upkarlidder](https://www.linkedin.com/in/upkarlidder)
   * github [lidderupk](https://github.com/lidderupk)
   * slides [upkar](https://slides.com/upkar/)
   * crowdcast (sign-in to replay)
     * [serverless workshop](https://www.crowdcast.io/e/serverless-workshop--/1) seattle
     * [pandas](https://www.crowdcast.io/e/data-wrangling-and) data-wrangling-and-exploration
-  * interview [developer relations strategy](https://developer.ibm.com/blogs/adapting-your-devrel-strategy-for-data-science-and-ai-products/)
-  * twitter [lidderupk](https://twitter.com/lidderupk)
+  * interview [developer relations strategy](https://web.archive.org/web/20200428193633/https://developer.ibm.com/blogs/adapting-your-devrel-strategy-for-data-science-and-ai-products/)
+  * [talks](https://upkarlidder.github.io/talks/)
 
 * Dave Nugent - IBM | Developer
   * IBM profile [drnugent](https://developer.ibm.com/profiles/drnugent/)
@@ -124,5 +126,8 @@ Other resources:
     * [kubernetes-hands-on-with-openshift](https://www.crowdcast.io/e/kubernetes-hands-on-with)
   * twitter [blumareks](https://twitter.com/blumareks)
 
-
-
+* Jenna Ritten
+  * IBM profile [jritten](https://developer.ibm.com/profiles/jritten/)
+  * github [jritten](https://github.com/jritten)
+  * linkedin [jritten](https://www.linkedin.com/in/jritten)
+  * [Linktree](https://linktr.ee/jritten)
