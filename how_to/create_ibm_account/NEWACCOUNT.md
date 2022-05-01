@@ -2,7 +2,6 @@
 
 To create a new account, follow the steps below,
 
-1. You need an IBM Cloud account to access your cluster.
 1. If you do not have an IBM Cloud account yet, go to <https://cloud.ibm.com/registration> to register.
 
 1. In the `Create an account` window, enter your email and password.
